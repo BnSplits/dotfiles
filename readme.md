@@ -8,7 +8,7 @@ sudo pacman -S hplip picom lxappearance ttf-fira-code ttf-font-awesome
 ```
 ## Installations via yay
 ```bash
-yay -S thorium-browser cava eog(eye of gnome) notesnook-bin visual-studio-code-bin onlyoffice megasync-bin pywal-16-colors
+yay -S thorium-browser cava eog(eye of gnome) notesnook-bin visual-studio-code-bin onlyoffice megasync-bin pywal-16-colors diodon
 ```
 ## INstallation via pacman
 ```bash
