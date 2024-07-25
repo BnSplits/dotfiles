@@ -1,0 +1,23 @@
+[xfdesktop-version-4.10.3+-rcfile_format]
+4.10.3+=true
+
+[Pixel 2 XL]
+row=0
+col=0
+
+[C19D-DCEA]
+row=1
+col=0
+
+[Corbeille]
+row=2
+col=0
+
+[/]
+row=3
+col=0
+
+[/home/bnsplit]
+row=4
+col=0
+

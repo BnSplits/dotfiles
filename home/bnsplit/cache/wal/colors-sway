@@ -1,0 +1,21 @@
+set $wallpaper /home/bnsplit/Images/Wallpapers/590 390.jpg
+
+set $background #0E0703
+set $foreground #cee1ed
+
+set $color0 #0E0703
+set $color1 #A15115
+set $color2 #D45F05
+set $color3 #907356
+set $color4 #F68D0C
+set $color5 #D5C469
+set $color6 #6E8F94
+set $color7 #cee1ed
+set $color8 #909da5
+set $color9 #A15115
+set $color10 #D45F05
+set $color11 #907356
+set $color12 #F68D0C
+set $color13 #D5C469
+set $color14 #6E8F94
+set $color15 #cee1ed

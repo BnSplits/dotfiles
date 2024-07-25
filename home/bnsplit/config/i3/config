@@ -45,10 +45,10 @@ bindsym $mod+q kill
 bindsym $mod+space exec --no-startup-id rofi -show drun
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+m focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -57,10 +57,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+m move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -69,10 +69,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # resize window (you can also use the mouse for that)
-bindsym $mod+ctrl+j resize shrink width 10 px or 10 ppt
-bindsym $mod+ctrl+k resize grow height 10 px or 10 ppt
-bindsym $mod+ctrl+l resize shrink height 10 px or 10 ppt
-bindsym $mod+ctrl+m resize grow width 10 px or 10 ppt
+bindsym $mod+ctrl+h resize shrink width 10 px or 10 ppt
+bindsym $mod+ctrl+j resize grow height 10 px or 10 ppt
+bindsym $mod+ctrl+k resize shrink height 10 px or 10 ppt
+bindsym $mod+ctrl+l resize grow width 10 px or 10 ppt
 
 # same bindings, but for the arrow keys
 bindsym $mod+ctrl+Left resize shrink width 10 px or 10 ppt
@@ -80,8 +80,11 @@ bindsym $mod+ctrl+Down resize grow height 10 px or 10 ppt
 bindsym $mod+ctrl+Up resize shrink height 10 px or 10 ppt
 bindsym $mod+ctrl+Right resize grow width 10 px or 10 ppt
 
+# move workspace to another monitor
+bindsym $mod+ctrl+m move workspace to output next
+
 # split in horizontal orientation
-bindsym $mod+h split h
+# bindsym $mod+h split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -104,9 +107,9 @@ set $ws4 "4 "
 set $ws5 "5 "
 set $ws6 "6 "
 set $ws7 "7 "
-#set $ws8 "8"
-#set $ws9 "9"
-#set $ws10 "10"
+set $ws8 "8 "
+set $ws9 "9 "
+set $ws10 "10 "
 
 # switch to workspace
 bindsym $mod+ampersand workspace number $ws1
@@ -116,16 +119,16 @@ bindsym $mod+apostrophe workspace number $ws4
 bindsym $mod+parenleft workspace number $ws5
 bindsym $mod+minus workspace number $ws6
 bindsym $mod+egrave workspace number $ws7
-#bindsym $mod+underscore workspace number $ws8
-#bindsym $mod+ccedilla workspace number $ws9
-#bindsym $mod+agrave workspace number $ws10
+bindsym $mod+underscore workspace number $ws8
+bindsym $mod+ccedilla workspace number $ws9
+bindsym $mod+agrave workspace number $ws10
 
 # Assign applications to workspaces
-assign [class="code"] $ws1
-assign [class="thorium-browser"] $ws2
+assign [class="nvim"] $ws1
+assign [class="Thorium-browser"] $ws2
 assign [class="kitty"] $ws3
-assign [class="nemo"] $ws4
-assign [class="spotify"] $ws5
+assign [class="ranger"] $ws4
+assign [class="Spotify"] $ws5
 assign [class="btop"] $ws6
 # assign [class="Thunderbird"] $ws7
 # assign [class="Spotify"] $ws8
@@ -154,7 +157,8 @@ bindsym $mod+Shift+escape exec "i3-nagbar -t warning -m 'You pressed the exit sh
 gaps inner 8
 
 # Borders config
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 0
+for_window [class="megasync"] border none
 #default_border pixel 1
 
 set_from_resource $fg i3wm.color7 #f0f0f0
@@ -173,3 +177,10 @@ exec_always ~/.config/i3/launch.sh
 
 # Picom
 exec source ~/.config/i3/launch_picom.sh
+
+# Lance des programes au démarrage
+exec --no-startup-id spotify --class="Spotify"
+exec --no-startup-id kitty --class ranger -e ranger
+exec --no-startup-id kitty
+exec --no-startup-id thorium-browser --class="Thorium-browser"
+# exec --no-startup-id kitty --class ranger -e nvim
