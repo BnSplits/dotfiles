@@ -1,0 +1,6 @@
+configuration {
+    show-icons: true;
+    drun-icon-theme: "Papirus";
+}
+/* Dark theme. */
+@import "~/.cache/wal/colors-rofi-dark"

@@ -22,10 +22,9 @@ exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+bindsym XF86AudioLowerVolume exec --no-startup-id wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+bindsym XF86AudioMute exec --no-startup-id wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -124,12 +123,12 @@ bindsym $mod+ccedilla workspace number $ws9
 bindsym $mod+agrave workspace number $ws10
 
 # Assign applications to workspaces
-assign [class="nvim"] $ws1
-assign [class="Thorium-browser"] $ws2
-assign [class="kitty"] $ws3
-assign [class="ranger"] $ws4
-assign [class="Spotify"] $ws5
-assign [class="btop"] $ws6
+# assign [class="nvim"] $ws1
+# assign [class="Thorium-browser"] $ws2
+# assign [class="kitty"] $ws3
+# assign [class="clifm"] $ws4
+# assign [class="Spotify"] $ws5
+# assign [class="btop"] $ws6
 # assign [class="Thunderbird"] $ws7
 # assign [class="Spotify"] $ws8
 # assign [class="Steam"] $ws9
@@ -179,8 +178,8 @@ exec_always ~/.config/i3/launch.sh
 exec source ~/.config/i3/launch_picom.sh
 
 # Lance des programes au démarrage
-exec --no-startup-id spotify --class="Spotify"
-exec --no-startup-id kitty --class ranger -e ranger
-exec --no-startup-id kitty
-exec --no-startup-id thorium-browser --class="Thorium-browser"
+# "exec --no-startup-id spotify --class="Spotify"
+# exec --no-startup-id kitty --class ranger -e clifm
+# exec --no-startup-id kitty
+# exec --no-startup-id thorium-browser --class="Thorium-browser"
 # exec --no-startup-id kitty --class ranger -e nvim
