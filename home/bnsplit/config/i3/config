@@ -178,7 +178,9 @@ exec_always ~/.config/i3/launch.sh
 exec source ~/.config/i3/launch_picom.sh
 
 # Lance des programes au démarrage
-# "exec --no-startup-id spotify --class="Spotify"
+exec --no-startup-id megasync
+exec --no-startup-id diodon
+# exec --no-startup-id spotify --class="Spotify"
 # exec --no-startup-id kitty --class ranger -e clifm
 # exec --no-startup-id kitty
 # exec --no-startup-id thorium-browser --class="Thorium-browser"
