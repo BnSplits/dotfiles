@@ -12,13 +12,3 @@ fi
 # Restore background
 #source ~/.fehbg && wal -R
 wal -R
-
-# Check if polybar is already running
-if pgrep -x "polybar" > /dev/null; then
-    # Kill all instances of polybar and restart it
-    killall polybar &
-    polybar &
-else
-    # Start polybar if it's not running
-    polybar &
-fi

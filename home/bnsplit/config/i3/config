@@ -156,6 +156,9 @@ exec_always ~/.config/i3/launch.sh
 # Picom
 exec source ~/.config/i3/launch_picom.sh
 
+# Polybar 
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+
 # Start programs at startup
 exec --no-startup-id megasync
 exec --no-startup-id diodon
