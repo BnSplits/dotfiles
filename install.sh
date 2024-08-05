@@ -1,4 +1,4 @@
-#t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!/usr/bin/bash
+#t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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!/usr/bin/bash
 
 # Mettre à jour le système
 sudo pacman -Syu
