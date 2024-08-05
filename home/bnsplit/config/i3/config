@@ -92,7 +92,7 @@ set $ws1 "1 "
 set $ws2 "2 "
 set $ws3 "3 "
 set $ws4 "4 "
-set $ws5 "5 "
+set $ws5 "5 "
 set $ws6 "6 "
 set $ws7 "7 "
 set $ws8 "8 "
@@ -133,17 +133,17 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+escape exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # Gaps
-gaps inner 8
+gaps inner 4
 
 # Borders configuration
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 2
 
 for_window [class="megasync"] border none
 
 # Colors
 set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color2 #f0f0f0
-client.focused          #ffffff     $bg     $fg  #ffffff      #ffffff 
+client.focused          $bg     $bg     $fg  $bg       $bg
 client.focused_inactive $bg     $bg     $fg  $bg       $bg
 client.unfocused        $bg     $bg     $fg  $bg       $bg
 client.urgent           $bg     $bg     $fg  $bg       $bg
