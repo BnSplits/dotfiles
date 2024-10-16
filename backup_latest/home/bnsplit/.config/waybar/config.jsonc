@@ -69,7 +69,6 @@
     "clock": {
         "interval": 1,
         "format": "{:%a. %d %b. %H:%M:%S}",
-        "on-click": "ags -t 'center-panel'",
         "locale": "fr_FR.UTF-8",
         "tooltip" :false,
     },
@@ -160,7 +159,6 @@
     "custom/extend": {
         "format": " ",
         "tooltip": false,
-        "on-click": "ags -t 'right-panel'"
     },
     "custom/update": {
         "interval": 60, 
