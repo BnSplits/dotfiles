@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 
-# Définir les couleurs
+# Define colors
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
@@ -9,7 +9,7 @@ BLUE='\033[0;34m'
 CYAN='\033[0;36m'
 NC='\033[0m' # No Color
 
-# Fonction pour afficher des messages avec des flèches
+# Function to display messages with arrows
 function echo_arrow() { echo -e "${BLUE}=> $1${NC}"; }
 function echo_success() { echo -e "${GREEN}✓ $1${NC}"; }
 function echo_warning() { echo -e "${YELLOW}⚠ $1${NC}"; }
@@ -20,13 +20,13 @@ function print_separator() {
     echo -e "${CYAN}##############################${NC}\n"
 }
 
-# Répertoire où les fichiers sauvegardés seront stockés
-BACKUP_DIR="$HOME/dev/dotfiles/backup_latest"
-mkdir -p "$BACKUP_DIR/home" "$BACKUP_DIR/etc" || { echo_error "Impossible de créer les répertoires de sauvegarde"; exit 1; }
+# Directory where backup files will be stored
+BACKUP_DIR="../backup_latest"
+mkdir -p "$BACKUP_DIR/home" "$BACKUP_DIR/etc" || { echo_error "Unable to create backup directories"; exit 1; }
 
-# Dossiers et fichiers à sauvegarder
+# Folders and files to backup
 items_to_backup=(
-    # Dossiers dans $HOME/.config
+    # Folders in $HOME/.config
     "$HOME/.config/ags/"
     "$HOME/.config/fastfetch/"
     "$HOME/.config/fish/"
@@ -43,43 +43,43 @@ items_to_backup=(
     "$HOME/.config/yay/"
     "$HOME/.config/yazi/"
 
-    # Fichiers dans $HOME/.config
+    # Files in $HOME/.config
     "$HOME/.config/starship.toml"
 
-    # Dossiers dans $HOME/.cache et autres dossiers
+    # Folders in $HOME/.cache and other folders
     "$HOME/.cache/wal/"
     "$HOME/.cache/wallpaper"
     "$HOME/.cache/wallpaper-blur"
     "$HOME/.fonts"
     # "$HOME/.zen"
 
-    # Fichiers dans $HOME
+    # Files in $HOME
     "$HOME/.bashrc"
     "$HOME/.zshrc"
     "$HOME/.Xresources"
 
-    # Fichiers dans /etc
+    # Files in /etc
     "/etc/makepkg.conf"
 )
 
-print_separator "Sauvegarde des fichiers et dossiers dans $BACKUP_DIR"
+print_separator "Backing up files and folders to $BACKUP_DIR"
 
-# Copie des fichiers et dossiers dans le répertoire de sauvegarde
+# Copy files and folders to the backup directory
 for item in "${items_to_backup[@]}"; do
     if [ -e "$item" ]; then
         dest="$BACKUP_DIR/${item}"
         dest_dir=$(dirname "$dest")
-        mkdir -p "$dest_dir" || { echo_error "Impossible de créer le répertoire $dest_dir"; exit 1; }
+        mkdir -p "$dest_dir" || { echo_error "Unable to create directory $dest_dir"; exit 1; }
 
         if [ -d "$item" ]; then
-            echo_arrow "Copie du répertoire $item..."
-            cp -rT "$item" "$dest" || { echo_error "Erreur lors de la copie de $item"; exit 1; }
+            echo_arrow "Copying directory $item..."
+            cp -rT "$item" "$dest" || { echo_error "Error copying $item"; exit 1; }
         else
-            echo_arrow "Copie du fichier $item..."
-            cp "$item" "$dest" || { echo_error "Erreur lors de la copie de $item"; exit 1; }
+            echo_arrow "Copying file $item..."
+            cp "$item" "$dest" || { echo_error "Error copying $item"; exit 1; }
         fi
     else
-        echo_warning "$item n'existe pas, saut de la sauvegarde"
+        echo_warning "$item does not exist, skipping backup"
     fi
 done
-echo_success "Sauvegarde terminée."
+echo_success "Backup completed."
