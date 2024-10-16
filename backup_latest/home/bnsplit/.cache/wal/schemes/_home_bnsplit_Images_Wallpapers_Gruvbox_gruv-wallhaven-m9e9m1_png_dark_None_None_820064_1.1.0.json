@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/gruv-wallhaven-m9e9m1.png",
+    "alpha": "100",
+    "special": {
+        "background": "#121314",
+        "foreground": "#d4d9c7",
+        "cursor": "#d4d9c7"
+    },
+    "colors": {
+        "color0": "#121314",
+        "color1": "#3B7E82",
+        "color2": "#637B86",
+        "color3": "#3D8386",
+        "color4": "#6E898C",
+        "color5": "#9EA892",
+        "color6": "#D0AF9E",
+        "color7": "#d4d9c7",
+        "color8": "#94978b",
+        "color9": "#3B7E82",
+        "color10": "#637B86",
+        "color11": "#3D8386",
+        "color12": "#6E898C",
+        "color13": "#9EA892",
+        "color14": "#D0AF9E",
+        "color15": "#d4d9c7"
+    }
+}

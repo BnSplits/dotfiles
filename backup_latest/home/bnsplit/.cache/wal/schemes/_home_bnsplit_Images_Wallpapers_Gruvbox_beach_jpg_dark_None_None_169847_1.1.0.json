@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/beach.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#2d231e",
+        "foreground": "#c2c8c7",
+        "cursor": "#c2c8c7"
+    },
+    "colors": {
+        "color0": "#2d231e",
+        "color1": "#3D788B",
+        "color2": "#537B8A",
+        "color3": "#677C86",
+        "color4": "#AB7B82",
+        "color5": "#3E8998",
+        "color6": "#648D98",
+        "color7": "#c2c8c7",
+        "color8": "#878c8b",
+        "color9": "#3D788B",
+        "color10": "#537B8A",
+        "color11": "#677C86",
+        "color12": "#AB7B82",
+        "color13": "#3E8998",
+        "color14": "#648D98",
+        "color15": "#c2c8c7"
+    }
+}

@@ -1,0 +1,21 @@
+set $wallpaper /home/bnsplit/Images/Wallpapers/008.png
+
+set $background #0e1013
+set $foreground #c2c3c4
+
+set $color0 #0e1013
+set $color1 #665C54
+set $color2 #70655B
+set $color3 #766E61
+set $color4 #BE492A
+set $color5 #867667
+set $color6 #64A66C
+set $color7 #c2c3c4
+set $color8 #59606d
+set $color9 #665C54
+set $color10 #70655B
+set $color11 #766E61
+set $color12 #BE492A
+set $color13 #867667
+set $color14 #64A66C
+set $color15 #c2c3c4

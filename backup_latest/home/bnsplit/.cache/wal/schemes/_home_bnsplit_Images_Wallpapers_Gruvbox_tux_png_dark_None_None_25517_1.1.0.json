@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/tux.png",
+    "alpha": "100",
+    "special": {
+        "background": "#101213",
+        "foreground": "#dfbbc4",
+        "cursor": "#dfbbc4"
+    },
+    "colors": {
+        "color0": "#101213",
+        "color1": "#F7BC31",
+        "color2": "#9A9B6D",
+        "color3": "#8EC17C",
+        "color4": "#9A898C",
+        "color5": "#AB9798",
+        "color6": "#89AA91",
+        "color7": "#dfbbc4",
+        "color8": "#9c8289",
+        "color9": "#F7BC31",
+        "color10": "#9A9B6D",
+        "color11": "#8EC17C",
+        "color12": "#9A898C",
+        "color13": "#AB9798",
+        "color14": "#89AA91",
+        "color15": "#dfbbc4"
+    }
+}

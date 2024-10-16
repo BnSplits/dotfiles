@@ -1,0 +1,79 @@
+@import "../../.cache/wal/colors-waybar.css";
+* {
+  border: none;
+  font-family: sans-serif;
+  /* font-family: "JetBrainsMono", sans-serif; */
+  font-size: 18px;
+  font-weight: 800;
+  animation-timing-function: steps(12);
+  animation-duration: 0s;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+.module {
+  background: @color2;
+  color: #ffffff;
+  border: 1px solid @foreground;
+  border-radius: 999px;
+  margin: 3px;
+  padding: 0 6px;
+}
+
+tooltip {
+  background: @background;
+  border: 2px solid @foreground;
+  border-radius: 16px;
+}
+
+tooltip label {
+  color: @foreground;
+}
+
+#workspaces {
+  padding: 0;
+}
+
+#workspaces button {
+  border-radius: 999px;
+  margin: 3px;
+  padding: 0 10px;
+  border: 1px solid transparent;
+}
+
+#workspaces button.active {
+  background: @color3;
+  border: 1px solid @foreground;
+}
+
+#workspaces button:hover {
+  background: @color4;
+  border: 1px solid @foreground;
+}
+
+#battery.warning {
+  color: red;
+  font-weight: bold;
+}
+
+#clock {
+    font-size: 18px;
+}
+
+#bluetooth {
+    font-size: 20px;
+}
+
+#window {
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+}
+
+.group-other .module {
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+}

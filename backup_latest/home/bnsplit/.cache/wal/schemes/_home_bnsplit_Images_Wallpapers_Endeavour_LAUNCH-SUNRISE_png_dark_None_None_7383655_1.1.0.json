@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Endeavour/LAUNCH-SUNRISE.png",
+    "alpha": "100",
+    "special": {
+        "background": "#11091e",
+        "foreground": "#cd9fa3",
+        "cursor": "#cd9fa3"
+    },
+    "colors": {
+        "color0": "#11091e",
+        "color1": "#522844",
+        "color2": "#713342",
+        "color3": "#684E67",
+        "color4": "#8F3539",
+        "color5": "#8C3C43",
+        "color6": "#A13F40",
+        "color7": "#cd9fa3",
+        "color8": "#8f6f72",
+        "color9": "#522844",
+        "color10": "#713342",
+        "color11": "#684E67",
+        "color12": "#8F3539",
+        "color13": "#8C3C43",
+        "color14": "#A13F40",
+        "color15": "#cd9fa3"
+    }
+}

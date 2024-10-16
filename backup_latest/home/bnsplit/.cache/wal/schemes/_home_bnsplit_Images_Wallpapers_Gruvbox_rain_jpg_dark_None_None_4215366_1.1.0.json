@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/rain.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#191412",
+        "foreground": "#e0d9d4",
+        "cursor": "#e0d9d4"
+    },
+    "colors": {
+        "color0": "#191412",
+        "color1": "#91593D",
+        "color2": "#88766C",
+        "color3": "#988579",
+        "color4": "#C49678",
+        "color5": "#AB9B93",
+        "color6": "#C7B6AC",
+        "color7": "#e0d9d4",
+        "color8": "#9c9794",
+        "color9": "#91593D",
+        "color10": "#88766C",
+        "color11": "#988579",
+        "color12": "#C49678",
+        "color13": "#AB9B93",
+        "color14": "#C7B6AC",
+        "color15": "#e0d9d4"
+    }
+}

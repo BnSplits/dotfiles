@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/2560x1440-dark-windows2.png",
+    "alpha": "100",
+    "special": {
+        "background": "#181818",
+        "foreground": "#e4ddca",
+        "cursor": "#e4ddca"
+    },
+    "colors": {
+        "color0": "#181818",
+        "color1": "#5A8D75",
+        "color2": "#689D6A",
+        "color3": "#D49822",
+        "color4": "#988F77",
+        "color5": "#458588",
+        "color6": "#BAAE8F",
+        "color7": "#e4ddca",
+        "color8": "#9f9a8d",
+        "color9": "#5A8D75",
+        "color10": "#689D6A",
+        "color11": "#D49822",
+        "color12": "#988F77",
+        "color13": "#458588",
+        "color14": "#BAAE8F",
+        "color15": "#e4ddca"
+    }
+}

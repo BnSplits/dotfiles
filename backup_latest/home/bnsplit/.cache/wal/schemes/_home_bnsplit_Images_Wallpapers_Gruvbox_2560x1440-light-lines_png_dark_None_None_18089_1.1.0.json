@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/2560x1440-light-lines.png",
+    "alpha": "100",
+    "special": {
+        "background": "#962a1e",
+        "foreground": "#ece1cc",
+        "cursor": "#ece1cc"
+    },
+    "colors": {
+        "color0": "#962a1e",
+        "color1": "#8DC07B",
+        "color2": "#8EC07C",
+        "color3": "#91A88C",
+        "color4": "#85AA93",
+        "color5": "#83A598",
+        "color6": "#A6C78A",
+        "color7": "#ece1cc",
+        "color8": "#a59d8e",
+        "color9": "#8DC07B",
+        "color10": "#8EC07C",
+        "color11": "#91A88C",
+        "color12": "#85AA93",
+        "color13": "#83A598",
+        "color14": "#A6C78A",
+        "color15": "#ece1cc"
+    }
+}

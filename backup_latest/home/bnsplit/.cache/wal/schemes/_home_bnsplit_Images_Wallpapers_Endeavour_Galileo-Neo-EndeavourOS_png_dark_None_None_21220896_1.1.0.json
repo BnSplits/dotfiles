@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Endeavour/Galileo-Neo-EndeavourOS.png",
+    "alpha": "100",
+    "special": {
+        "background": "#08030A",
+        "foreground": "#c59cd3",
+        "cursor": "#c59cd3"
+    },
+    "colors": {
+        "color0": "#08030A",
+        "color1": "#5C1D6C",
+        "color2": "#694D6D",
+        "color3": "#730B8A",
+        "color4": "#73328B",
+        "color5": "#7C5785",
+        "color6": "#8E6399",
+        "color7": "#c59cd3",
+        "color8": "#896d93",
+        "color9": "#5C1D6C",
+        "color10": "#694D6D",
+        "color11": "#730B8A",
+        "color12": "#73328B",
+        "color13": "#7C5785",
+        "color14": "#8E6399",
+        "color15": "#c59cd3"
+    }
+}

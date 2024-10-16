@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/gruv-buildings.png",
+    "alpha": "100",
+    "special": {
+        "background": "#3f2421",
+        "foreground": "#e8e5d9",
+        "cursor": "#e8e5d9"
+    },
+    "colors": {
+        "color0": "#3f2421",
+        "color1": "#D8C49B",
+        "color2": "#E7C69A",
+        "color3": "#D9C8A9",
+        "color4": "#E7CEAB",
+        "color5": "#EBE1BD",
+        "color6": "#E3DDC5",
+        "color7": "#e8e5d9",
+        "color8": "#a2a097",
+        "color9": "#D8C49B",
+        "color10": "#E7C69A",
+        "color11": "#D9C8A9",
+        "color12": "#E7CEAB",
+        "color13": "#EBE1BD",
+        "color14": "#E3DDC5",
+        "color15": "#e8e5d9"
+    }
+}

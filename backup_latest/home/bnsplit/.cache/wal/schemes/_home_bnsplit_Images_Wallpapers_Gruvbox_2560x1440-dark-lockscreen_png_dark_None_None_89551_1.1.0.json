@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/2560x1440-dark-lockscreen.png",
+    "alpha": "100",
+    "special": {
+        "background": "#181818",
+        "foreground": "#99b9bb",
+        "cursor": "#99b9bb"
+    },
+    "colors": {
+        "color0": "#181818",
+        "color1": "#CC241D",
+        "color2": "#5C875E",
+        "color3": "#689D6A",
+        "color4": "#B98622",
+        "color5": "#D79921",
+        "color6": "#437F81",
+        "color7": "#99b9bb",
+        "color8": "#6b8182",
+        "color9": "#CC241D",
+        "color10": "#5C875E",
+        "color11": "#689D6A",
+        "color12": "#B98622",
+        "color13": "#D79921",
+        "color14": "#437F81",
+        "color15": "#99b9bb"
+    }
+}

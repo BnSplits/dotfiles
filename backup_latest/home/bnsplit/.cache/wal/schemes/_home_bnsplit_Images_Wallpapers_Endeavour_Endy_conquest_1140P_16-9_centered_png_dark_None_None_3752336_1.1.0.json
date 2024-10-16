@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Endeavour/Endy_conquest_1140P_16-9_centered.png",
+    "alpha": "100",
+    "special": {
+        "background": "#120f1b",
+        "foreground": "#dccce3",
+        "cursor": "#dccce3"
+    },
+    "colors": {
+        "color0": "#120f1b",
+        "color1": "#9D6FC1",
+        "color2": "#AB78C6",
+        "color3": "#B59BC6",
+        "color4": "#B891CB",
+        "color5": "#B89ED3",
+        "color6": "#C597D5",
+        "color7": "#dccce3",
+        "color8": "#9a8e9e",
+        "color9": "#9D6FC1",
+        "color10": "#AB78C6",
+        "color11": "#B59BC6",
+        "color12": "#B891CB",
+        "color13": "#B89ED3",
+        "color14": "#C597D5",
+        "color15": "#dccce3"
+    }
+}

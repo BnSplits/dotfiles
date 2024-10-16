@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/debian_grey_swirl.png",
+    "alpha": "100",
+    "special": {
+        "background": "#121213",
+        "foreground": "#e8e5dd",
+        "cursor": "#e8e5dd"
+    },
+    "colors": {
+        "color0": "#121213",
+        "color1": "#85837B",
+        "color2": "#95938A",
+        "color3": "#B0ACA1",
+        "color4": "#C1BDB0",
+        "color5": "#CCC8BA",
+        "color6": "#D9D4C5",
+        "color7": "#e8e5dd",
+        "color8": "#a2a09a",
+        "color9": "#85837B",
+        "color10": "#95938A",
+        "color11": "#B0ACA1",
+        "color12": "#C1BDB0",
+        "color13": "#CCC8BA",
+        "color14": "#D9D4C5",
+        "color15": "#e8e5dd"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/2560x1440-dark-artix2.png",
+    "alpha": "100",
+    "special": {
+        "background": "#181818",
+        "foreground": "#e7e0ce",
+        "cursor": "#e7e0ce"
+    },
+    "colors": {
+        "color0": "#181818",
+        "color1": "#5A8D75",
+        "color2": "#689D6A",
+        "color3": "#D49822",
+        "color4": "#978E76",
+        "color5": "#458588",
+        "color6": "#D3C7A7",
+        "color7": "#e7e0ce",
+        "color8": "#a19c90",
+        "color9": "#5A8D75",
+        "color10": "#689D6A",
+        "color11": "#D49822",
+        "color12": "#978E76",
+        "color13": "#458588",
+        "color14": "#D3C7A7",
+        "color15": "#e7e0ce"
+    }
+}

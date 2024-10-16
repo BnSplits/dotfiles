@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/gruv-focus.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0d0f10",
+        "foreground": "#ece4d0",
+        "cursor": "#ece4d0"
+    },
+    "colors": {
+        "color0": "#0d0f10",
+        "color1": "#7F8373",
+        "color2": "#8C846F",
+        "color3": "#DF8D74",
+        "color4": "#B1A88C",
+        "color5": "#D3B596",
+        "color6": "#D3C9A6",
+        "color7": "#ece4d0",
+        "color8": "#a59f91",
+        "color9": "#7F8373",
+        "color10": "#8C846F",
+        "color11": "#DF8D74",
+        "color12": "#B1A88C",
+        "color13": "#D3B596",
+        "color14": "#D3C9A6",
+        "color15": "#ece4d0"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Endeavour/eos_trails_1440p.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0c0712",
+        "foreground": "#c7a4c5",
+        "cursor": "#c7a4c5"
+    },
+    "colors": {
+        "color0": "#0c0712",
+        "color1": "#CA6873",
+        "color2": "#693A9A",
+        "color3": "#6A38A5",
+        "color4": "#5F4FA6",
+        "color5": "#6967D3",
+        "color6": "#776CE5",
+        "color7": "#c7a4c5",
+        "color8": "#8b7289",
+        "color9": "#CA6873",
+        "color10": "#693A9A",
+        "color11": "#6A38A5",
+        "color12": "#5F4FA6",
+        "color13": "#6967D3",
+        "color14": "#776CE5",
+        "color15": "#c7a4c5"
+    }
+}

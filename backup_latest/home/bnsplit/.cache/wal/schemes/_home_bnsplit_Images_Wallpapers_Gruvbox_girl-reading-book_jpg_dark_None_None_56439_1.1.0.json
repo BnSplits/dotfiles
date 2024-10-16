@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/girl-reading-book.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0d0d0e",
+        "foreground": "#a4d4d4",
+        "cursor": "#a4d4d4"
+    },
+    "colors": {
+        "color0": "#0d0d0e",
+        "color1": "#34544F",
+        "color2": "#9B572A",
+        "color3": "#AC4A34",
+        "color4": "#8F6044",
+        "color5": "#E19A38",
+        "color6": "#B9A751",
+        "color7": "#a4d4d4",
+        "color8": "#729494",
+        "color9": "#34544F",
+        "color10": "#9B572A",
+        "color11": "#AC4A34",
+        "color12": "#8F6044",
+        "color13": "#E19A38",
+        "color14": "#B9A751",
+        "color15": "#a4d4d4"
+    }
+}

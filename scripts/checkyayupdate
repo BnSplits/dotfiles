@@ -1,0 +1,55 @@
+#!/usr/bin/bash
+
+# checkyayupdates: Print a list of pending updates for yay.
+# Copyright (c) 2024 Your Name <your.email@example.com>
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License.
+
+declare -r myname='checkyayupdates'
+declare -r myver='1.0.0'
+
+usage() {
+    cat <<EOF
+${myname} v${myver}
+
+Print a list of pending updates for yay.
+
+Usage: ${myname} [options]
+
+Options:
+  -h, --help      display this help message and exit
+  -V, --version   display version information and exit
+EOF
+}
+
+version() {
+    printf "%s %s\n" "$myname" "$myver"
+}
+
+# Parse options
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        -h|--help)
+            usage
+            exit 0 ;;
+        -V|--version)
+            version
+            exit 0 ;;
+        *)
+            echo "Unknown option: $1"
+            usage
+            exit 1 ;;
+    esac
+    shift
+done
+
+# Check for updates
+updates=$(yay -Qu)
+
+if [[ -n "$updates" ]]; then
+    printf '%s\n' "$updates"
+    exit 0
+else
+    exit 2
+fi
+

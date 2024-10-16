@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Endeavour/EndeavourOS-Artemis.png",
+    "alpha": "100",
+    "special": {
+        "background": "#090510",
+        "foreground": "#b5bad4",
+        "cursor": "#b5bad4"
+    },
+    "colors": {
+        "color0": "#090510",
+        "color1": "#5B4B6C",
+        "color2": "#6F328F",
+        "color3": "#6456AA",
+        "color4": "#8E3DA3",
+        "color5": "#964DB3",
+        "color6": "#A967CA",
+        "color7": "#b5bad4",
+        "color8": "#7e8294",
+        "color9": "#5B4B6C",
+        "color10": "#6F328F",
+        "color11": "#6456AA",
+        "color12": "#8E3DA3",
+        "color13": "#964DB3",
+        "color14": "#A967CA",
+        "color15": "#b5bad4"
+    }
+}

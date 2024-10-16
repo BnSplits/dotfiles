@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/future-town.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1d150f",
+        "foreground": "#e1c5a3",
+        "cursor": "#e1c5a3"
+    },
+    "colors": {
+        "color0": "#1d150f",
+        "color1": "#746756",
+        "color2": "#915B2D",
+        "color3": "#CD7420",
+        "color4": "#8F7657",
+        "color5": "#A2865F",
+        "color6": "#928566",
+        "color7": "#e1c5a3",
+        "color8": "#9d8972",
+        "color9": "#746756",
+        "color10": "#915B2D",
+        "color11": "#CD7420",
+        "color12": "#8F7657",
+        "color13": "#A2865F",
+        "color14": "#928566",
+        "color15": "#e1c5a3"
+    }
+}

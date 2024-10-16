@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/wallhaven-z85eoy.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0d0606",
+        "foreground": "#f5dacc",
+        "cursor": "#f5dacc"
+    },
+    "colors": {
+        "color0": "#0d0606",
+        "color1": "#C15846",
+        "color2": "#BB8566",
+        "color3": "#DB9572",
+        "color4": "#BA7784",
+        "color5": "#F0AD9D",
+        "color6": "#F1B191",
+        "color7": "#f5dacc",
+        "color8": "#ab988e",
+        "color9": "#C15846",
+        "color10": "#BB8566",
+        "color11": "#DB9572",
+        "color12": "#BA7784",
+        "color13": "#F0AD9D",
+        "color14": "#F1B191",
+        "color15": "#f5dacc"
+    }
+}

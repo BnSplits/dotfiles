@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/flowers.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#122323",
+        "foreground": "#dfc7c1",
+        "cursor": "#dfc7c1"
+    },
+    "colors": {
+        "color0": "#122323",
+        "color1": "#C06031",
+        "color2": "#A36158",
+        "color3": "#CE7056",
+        "color4": "#CF8C69",
+        "color5": "#75969C",
+        "color6": "#A8989A",
+        "color7": "#dfc7c1",
+        "color8": "#9c8b87",
+        "color9": "#C06031",
+        "color10": "#A36158",
+        "color11": "#CE7056",
+        "color12": "#CF8C69",
+        "color13": "#75969C",
+        "color14": "#A8989A",
+        "color15": "#dfc7c1"
+    }
+}

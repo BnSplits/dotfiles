@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Endeavour/krimkerre_2_poly.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#060017",
+        "foreground": "#a19fba",
+        "cursor": "#a19fba"
+    },
+    "colors": {
+        "color0": "#060017",
+        "color1": "#714576",
+        "color2": "#922D61",
+        "color3": "#91586A",
+        "color4": "#172C8B",
+        "color5": "#1C2092",
+        "color6": "#2644A2",
+        "color7": "#a19fba",
+        "color8": "#706f82",
+        "color9": "#714576",
+        "color10": "#922D61",
+        "color11": "#91586A",
+        "color12": "#172C8B",
+        "color13": "#1C2092",
+        "color14": "#2644A2",
+        "color15": "#a19fba"
+    }
+}

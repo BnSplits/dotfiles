@@ -1,0 +1,28 @@
+{
+    "checksum": "aa18db87d008a233842559d9b6edc453",
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/084.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#080F1B",
+        "foreground": "#c1c3c6",
+        "cursor": "#c1c3c6"
+    },
+    "colors": {
+        "color0": "#080F1B",
+        "color1": "#344659",
+        "color2": "#5C585F",
+        "color3": "#A95A2D",
+        "color4": "#9A6B5A",
+        "color5": "#DD9C62",
+        "color6": "#E79D69",
+        "color7": "#c1c3c6",
+        "color8": "#5a626e",
+        "color9": "#344659",
+        "color10": "#5C585F",
+        "color11": "#A95A2D",
+        "color12": "#9A6B5A",
+        "color13": "#DD9C62",
+        "color14": "#E79D69",
+        "color15": "#c1c3c6"
+    }
+}

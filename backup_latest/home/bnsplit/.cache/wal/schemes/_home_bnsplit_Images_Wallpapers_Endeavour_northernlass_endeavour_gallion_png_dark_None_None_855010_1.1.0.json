@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Endeavour/northernlass_endeavour_gallion.png",
+    "alpha": "100",
+    "special": {
+        "background": "#1a102b",
+        "foreground": "#d9c6df",
+        "cursor": "#d9c6df"
+    },
+    "colors": {
+        "color0": "#1a102b",
+        "color1": "#6F4C8F",
+        "color2": "#654A94",
+        "color3": "#795ED9",
+        "color4": "#976BA5",
+        "color5": "#C66D9A",
+        "color6": "#AC87B9",
+        "color7": "#d9c6df",
+        "color8": "#978a9c",
+        "color9": "#6F4C8F",
+        "color10": "#654A94",
+        "color11": "#795ED9",
+        "color12": "#976BA5",
+        "color13": "#C66D9A",
+        "color14": "#AC87B9",
+        "color15": "#d9c6df"
+    }
+}

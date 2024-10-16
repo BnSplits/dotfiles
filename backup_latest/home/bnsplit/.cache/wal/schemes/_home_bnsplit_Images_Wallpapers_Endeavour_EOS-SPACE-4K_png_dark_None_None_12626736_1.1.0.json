@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Endeavour/EOS-SPACE-4K.png",
+    "alpha": "100",
+    "special": {
+        "background": "#050212",
+        "foreground": "#e3c4e1",
+        "cursor": "#e3c4e1"
+    },
+    "colors": {
+        "color0": "#050212",
+        "color1": "#633095",
+        "color2": "#7B699C",
+        "color3": "#5044A3",
+        "color4": "#9C55A9",
+        "color5": "#B35DB2",
+        "color6": "#A561D0",
+        "color7": "#e3c4e1",
+        "color8": "#9e899d",
+        "color9": "#633095",
+        "color10": "#7B699C",
+        "color11": "#5044A3",
+        "color12": "#9C55A9",
+        "color13": "#B35DB2",
+        "color14": "#A561D0",
+        "color15": "#e3c4e1"
+    }
+}

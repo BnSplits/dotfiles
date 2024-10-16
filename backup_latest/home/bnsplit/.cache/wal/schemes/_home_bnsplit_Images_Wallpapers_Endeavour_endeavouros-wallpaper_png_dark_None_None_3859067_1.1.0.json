@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Endeavour/endeavouros-wallpaper.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0c0e19",
+        "foreground": "#dad3da",
+        "cursor": "#dad3da"
+    },
+    "colors": {
+        "color0": "#0c0e19",
+        "color1": "#6A5BC2",
+        "color2": "#996A9A",
+        "color3": "#C3779D",
+        "color4": "#A78EB2",
+        "color5": "#8B94C0",
+        "color6": "#A3AACD",
+        "color7": "#dad3da",
+        "color8": "#989398",
+        "color9": "#6A5BC2",
+        "color10": "#996A9A",
+        "color11": "#C3779D",
+        "color12": "#A78EB2",
+        "color13": "#8B94C0",
+        "color14": "#A3AACD",
+        "color15": "#dad3da"
+    }
+}

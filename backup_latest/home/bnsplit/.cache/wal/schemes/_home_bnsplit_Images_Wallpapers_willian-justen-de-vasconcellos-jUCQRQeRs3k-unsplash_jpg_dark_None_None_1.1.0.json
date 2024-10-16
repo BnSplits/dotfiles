@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/willian-justen-de-vasconcellos-jUCQRQeRs3k-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#00383F",
+        "foreground": "#e0eef0",
+        "cursor": "#e0eef0"
+    },
+    "colors": {
+        "color0": "#00383F",
+        "color1": "#23A6B1",
+        "color2": "#1BB7C6",
+        "color3": "#4BBCC6",
+        "color4": "#6BC9D2",
+        "color5": "#91D8E0",
+        "color6": "#B2E5EB",
+        "color7": "#e0eef0",
+        "color8": "#9ca6a8",
+        "color9": "#23A6B1",
+        "color10": "#1BB7C6",
+        "color11": "#4BBCC6",
+        "color12": "#6BC9D2",
+        "color13": "#91D8E0",
+        "color14": "#B2E5EB",
+        "color15": "#e0eef0"
+    }
+}

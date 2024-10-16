@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/1.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#111213",
+        "foreground": "#ccc4ba",
+        "cursor": "#ccc4ba"
+    },
+    "colors": {
+        "color0": "#111213",
+        "color1": "#4E4F47",
+        "color2": "#6C6658",
+        "color3": "#897559",
+        "color4": "#76866B",
+        "color5": "#B8A437",
+        "color6": "#978A73",
+        "color7": "#ccc4ba",
+        "color8": "#8e8982",
+        "color9": "#4E4F47",
+        "color10": "#6C6658",
+        "color11": "#897559",
+        "color12": "#76866B",
+        "color13": "#B8A437",
+        "color14": "#978A73",
+        "color15": "#ccc4ba"
+    }
+}

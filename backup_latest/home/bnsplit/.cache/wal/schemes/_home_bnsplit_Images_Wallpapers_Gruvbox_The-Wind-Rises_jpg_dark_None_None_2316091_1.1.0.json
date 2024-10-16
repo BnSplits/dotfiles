@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/The-Wind-Rises.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#2d3924",
+        "foreground": "#e2e3dc",
+        "cursor": "#e2e3dc"
+    },
+    "colors": {
+        "color0": "#2d3924",
+        "color1": "#1394A6",
+        "color2": "#2FB1B0",
+        "color3": "#77A095",
+        "color4": "#98AA9A",
+        "color5": "#C2BBAB",
+        "color6": "#E3D9AF",
+        "color7": "#e2e3dc",
+        "color8": "#9e9e9a",
+        "color9": "#1394A6",
+        "color10": "#2FB1B0",
+        "color11": "#77A095",
+        "color12": "#98AA9A",
+        "color13": "#C2BBAB",
+        "color14": "#E3D9AF",
+        "color15": "#e2e3dc"
+    }
+}

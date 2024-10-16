@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/houses.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c1011",
+        "foreground": "#bccec8",
+        "cursor": "#bccec8"
+    },
+    "colors": {
+        "color0": "#0c1011",
+        "color1": "#833F3D",
+        "color2": "#9E504B",
+        "color3": "#D9645E",
+        "color4": "#EC6A63",
+        "color5": "#85847C",
+        "color6": "#79A99E",
+        "color7": "#bccec8",
+        "color8": "#83908c",
+        "color9": "#833F3D",
+        "color10": "#9E504B",
+        "color11": "#D9645E",
+        "color12": "#EC6A63",
+        "color13": "#85847C",
+        "color14": "#79A99E",
+        "color15": "#bccec8"
+    }
+}

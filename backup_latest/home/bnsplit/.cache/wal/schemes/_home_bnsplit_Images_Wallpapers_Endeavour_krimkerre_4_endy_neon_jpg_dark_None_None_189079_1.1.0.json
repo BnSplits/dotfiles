@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Endeavour/krimkerre_4_endy_neon.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#100515",
+        "foreground": "#8ac5e2",
+        "cursor": "#8ac5e2"
+    },
+    "colors": {
+        "color0": "#100515",
+        "color1": "#9C0F2E",
+        "color2": "#BF3E37",
+        "color3": "#981956",
+        "color4": "#C8B86B",
+        "color5": "#385AA3",
+        "color6": "#C554AA",
+        "color7": "#8ac5e2",
+        "color8": "#60899e",
+        "color9": "#9C0F2E",
+        "color10": "#BF3E37",
+        "color11": "#981956",
+        "color12": "#C8B86B",
+        "color13": "#385AA3",
+        "color14": "#C554AA",
+        "color15": "#8ac5e2"
+    }
+}

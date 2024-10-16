@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Endeavour/Endy_vector_satelliet.png",
+    "alpha": "100",
+    "special": {
+        "background": "#111018",
+        "foreground": "#c3dde4",
+        "cursor": "#c3dde4"
+    },
+    "colors": {
+        "color0": "#111018",
+        "color1": "#AD7498",
+        "color2": "#6E93CC",
+        "color3": "#73B2C4",
+        "color4": "#7DB8CF",
+        "color5": "#8E93BA",
+        "color6": "#85A7C7",
+        "color7": "#c3dde4",
+        "color8": "#889a9f",
+        "color9": "#AD7498",
+        "color10": "#6E93CC",
+        "color11": "#73B2C4",
+        "color12": "#7DB8CF",
+        "color13": "#8E93BA",
+        "color14": "#85A7C7",
+        "color15": "#c3dde4"
+    }
+}

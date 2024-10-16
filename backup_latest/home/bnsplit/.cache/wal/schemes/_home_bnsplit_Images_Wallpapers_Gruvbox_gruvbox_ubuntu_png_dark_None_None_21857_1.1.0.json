@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/gruvbox_ubuntu.png",
+    "alpha": "100",
+    "special": {
+        "background": "#181818",
+        "foreground": "#d1cebf",
+        "cursor": "#d1cebf"
+    },
+    "colors": {
+        "color0": "#181818",
+        "color1": "#689D6A",
+        "color2": "#D69922",
+        "color3": "#D79A25",
+        "color4": "#B59B6A",
+        "color5": "#458588",
+        "color6": "#6B978E",
+        "color7": "#d1cebf",
+        "color8": "#929085",
+        "color9": "#689D6A",
+        "color10": "#D69922",
+        "color11": "#D79A25",
+        "color12": "#B59B6A",
+        "color13": "#458588",
+        "color14": "#6B978E",
+        "color15": "#d1cebf"
+    }
+}

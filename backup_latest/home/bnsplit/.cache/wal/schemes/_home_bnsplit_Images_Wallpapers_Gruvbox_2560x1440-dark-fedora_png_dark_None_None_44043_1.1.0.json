@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/2560x1440-dark-fedora.png",
+    "alpha": "100",
+    "special": {
+        "background": "#181818",
+        "foreground": "#e2dbc9",
+        "cursor": "#e2dbc9"
+    },
+    "colors": {
+        "color0": "#181818",
+        "color1": "#998C6E",
+        "color2": "#458588",
+        "color3": "#788F80",
+        "color4": "#A59D83",
+        "color5": "#BCAE93",
+        "color6": "#C6B898",
+        "color7": "#e2dbc9",
+        "color8": "#9e998c",
+        "color9": "#998C6E",
+        "color10": "#458588",
+        "color11": "#788F80",
+        "color12": "#A59D83",
+        "color13": "#BCAE93",
+        "color14": "#C6B898",
+        "color15": "#e2dbc9"
+    }
+}

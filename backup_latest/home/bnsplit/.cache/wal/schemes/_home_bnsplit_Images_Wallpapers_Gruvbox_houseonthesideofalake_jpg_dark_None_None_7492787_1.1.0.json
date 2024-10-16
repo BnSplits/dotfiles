@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/houseonthesideofalake.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#131313",
+        "foreground": "#c3aa9b",
+        "cursor": "#c3aa9b"
+    },
+    "colors": {
+        "color0": "#131313",
+        "color1": "#423E42",
+        "color2": "#3A4649",
+        "color3": "#3E5A62",
+        "color4": "#4B4F4C",
+        "color5": "#5F605E",
+        "color6": "#935832",
+        "color7": "#c3aa9b",
+        "color8": "#88766c",
+        "color9": "#423E42",
+        "color10": "#3A4649",
+        "color11": "#3E5A62",
+        "color12": "#4B4F4C",
+        "color13": "#5F605E",
+        "color14": "#935832",
+        "color15": "#c3aa9b"
+    }
+}

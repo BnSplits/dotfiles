@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/wallhaven-vmk698.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#171e19",
+        "foreground": "#f1dfbd",
+        "cursor": "#f1dfbd"
+    },
+    "colors": {
+        "color0": "#171e19",
+        "color1": "#D5A572",
+        "color2": "#EFC37C",
+        "color3": "#7C7E80",
+        "color4": "#B99785",
+        "color5": "#C69B87",
+        "color6": "#D1A691",
+        "color7": "#f1dfbd",
+        "color8": "#a89c84",
+        "color9": "#D5A572",
+        "color10": "#EFC37C",
+        "color11": "#7C7E80",
+        "color12": "#B99785",
+        "color13": "#C69B87",
+        "color14": "#D1A691",
+        "color15": "#f1dfbd"
+    }
+}

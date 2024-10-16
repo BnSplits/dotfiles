@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/Gruvbox/DemonChild.png",
+    "alpha": "100",
+    "special": {
+        "background": "#221f1e",
+        "foreground": "#efe9d4",
+        "cursor": "#efe9d4"
+    },
+    "colors": {
+        "color0": "#221f1e",
+        "color1": "#887666",
+        "color2": "#95886C",
+        "color3": "#A99978",
+        "color4": "#B7A686",
+        "color5": "#D4C3A0",
+        "color6": "#E1D1AB",
+        "color7": "#efe9d4",
+        "color8": "#a7a394",
+        "color9": "#887666",
+        "color10": "#95886C",
+        "color11": "#A99978",
+        "color12": "#B7A686",
+        "color13": "#D4C3A0",
+        "color14": "#E1D1AB",
+        "color15": "#efe9d4"
+    }
+}

@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/bnsplit/Images/Wallpapers/008.png"
+let background = "#0e1013"
+let foreground = "#c2c3c4"
+let cursor     = "#c2c3c4"
+
+" Colors
+let color0  = "#0e1013"
+let color1  = "#665C54"
+let color2  = "#70655B"
+let color3  = "#766E61"
+let color4  = "#BE492A"
+let color5  = "#867667"
+let color6  = "#64A66C"
+let color7  = "#c2c3c4"
+let color8  = "#59606d"
+let color9  = "#665C54"
+let color10 = "#70655B"
+let color11 = "#766E61"
+let color12 = "#BE492A"
+let color13 = "#867667"
+let color14 = "#64A66C"
+let color15 = "#c2c3c4"
