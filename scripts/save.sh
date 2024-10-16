@@ -27,7 +27,7 @@ mkdir -p "$BACKUP_DIR/home" "$BACKUP_DIR/etc" || { echo_error "Unable to create 
 # Folders and files to backup
 items_to_backup=(
     # Folders in $HOME/.config
-    "$HOME/.config/ags/"
+    # "$HOME/.config/ags/"
     "$HOME/.config/fastfetch/"
     "$HOME/.config/fish/"
     "$HOME/.config/gtk-3.0/"
