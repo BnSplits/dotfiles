@@ -32,6 +32,7 @@ items_to_backup=(
     "$HOME/.config/fish/"
     "$HOME/.config/gtk-3.0/"
     "$HOME/.config/gtk-4.0/"
+    "$HOME/.config/qt6ct/"
     "$HOME/.config/hypr/"
     "$HOME/.config/kitty/"
     "$HOME/.config/nvim/"
@@ -60,6 +61,12 @@ items_to_backup=(
 
     # Files in /etc
     "/etc/makepkg.conf"
+    
+    # Applications files
+    "/usr/share/applications/opera.desktop"
+    "/usr/share/applications/vivaldi-stable.desktop"
+    "/usr/share/applications/google-chrome.desktop"
+    "/usr/share/applications/brave-browser.desktop"
 )
 
 print_separator "Backing up files and folders to $BACKUP_DIR"

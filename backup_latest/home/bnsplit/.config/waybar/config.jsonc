@@ -2,6 +2,7 @@
     "position": "top", 
     "height": 30, 
     "spacing": 2,
+    "output" : "eDP-1",
     "modules-left": [
         "hyprland/workspaces",
         "custom/cpu",
