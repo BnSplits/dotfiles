@@ -253,21 +253,21 @@ function restore_backup() {
             local makepkgconf_dest="/etc/makepkg.conf"
             sudo cp "$makepkgconf_source" "$makepkgconf_dest" && echo_success "makepkg.conf replaced in /etc/"
 
-            local opera_desktop_source="$ARCHIVE_BACKUP/usr/share/applications/opera.desktop"
-            local opera_desktop_dest="/usr/share/applications/opera.desktop"
-            sudo cp "$opera_desktop_source" "$opera_desktop_dest" && echo_success "opera.desktop replaced in /usr/share/applications/"
-
-            local vivaldi_desktop_source="$ARCHIVE_BACKUP/usr/share/applications/vivaldi-stable.desktop"
-            local vivaldi_desktop_dest="/usr/share/applications/vivaldi-stable.desktop"
-            sudo cp "$vivaldi_desktop_source" "$vivaldi_desktop_dest" && echo_success "vivaldi-stable.desktop replaced in /usr/share/applications/"
+            # local opera_desktop_source="$ARCHIVE_BACKUP/usr/share/applications/opera.desktop"
+            # local opera_desktop_dest="/usr/share/applications/opera.desktop"
+            # sudo cp "$opera_desktop_source" "$opera_desktop_dest" && echo_success "opera.desktop replaced in /usr/share/applications/"
+            #
+            # local vivaldi_desktop_source="$ARCHIVE_BACKUP/usr/share/applications/vivaldi-stable.desktop"
+            # local vivaldi_desktop_dest="/usr/share/applications/vivaldi-stable.desktop"
+            # sudo cp "$vivaldi_desktop_source" "$vivaldi_desktop_dest" && echo_success "vivaldi-stable.desktop replaced in /usr/share/applications/"
 
             local chrome_desktop_source="$ARCHIVE_BACKUP/usr/share/applications/google-chrome.desktop"
             local chrome_desktop_dest="/usr/share/applications/google-chrome.desktop"
             sudo cp "$chrome_desktop_source" "$chrome_desktop_dest" && echo_success "google-chrome.desktop replaced in /usr/share/applications/"
 
-            local brave_desktop_source="$ARCHIVE_BACKUP/usr/share/applications/brave-browser.desktop"
-            local brave_desktop_dest="/usr/share/applications/brave-browser.desktop"
-            sudo cp "$brave_desktop_source" "$ brave_desktop_dest" && echo_success "brave-browser.desktop replaced in /usr/share/applications/"
+            # local brave_desktop_source="$ARCHIVE_BACKUP/usr/share/applications/brave-browser.desktop"
+            # local brave_desktop_dest="/usr/share/applications/brave-browser.desktop"
+            # sudo cp "$brave_desktop_source" "$ brave_desktop_dest" && echo_success "brave-browser.desktop replaced in /usr/share/applications/"
 
             echo_success "Restoration complete"
         fi

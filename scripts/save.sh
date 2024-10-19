@@ -63,10 +63,10 @@ items_to_backup=(
     "/etc/makepkg.conf"
     
     # Applications files
-    "/usr/share/applications/opera.desktop"
-    "/usr/share/applications/vivaldi-stable.desktop"
+    # "/usr/share/applications/opera.desktop"
+    # "/usr/share/applications/vivaldi-stable.desktop"
     "/usr/share/applications/google-chrome.desktop"
-    "/usr/share/applications/brave-browser.desktop"
+    # "/usr/share/applications/brave-browser.desktop"
 )
 
 print_separator "Backing up files and folders to $BACKUP_DIR"
