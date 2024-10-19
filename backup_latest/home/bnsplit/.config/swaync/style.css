@@ -8,7 +8,7 @@
 @define-color noti-bg-darker @color-solid2;
 @define-color noti-bg-hover @color-solid3;
 @define-color noti-bg-hover-opaque @color-solid2;
-@define-color noti-bg-focus @color-solid3;
+@define-color noti-bg-focus @color-solid2;
 @define-color noti-close-bg @color-solid1;
 @define-color noti-close-bg-hover @color-solid1;
 @define-color text-color @foreground;
@@ -28,17 +28,18 @@
 }
 
 /* My custom */
+
 .notification-row .notification-background {
   padding: 0;
 }
 .notification-row .notification-background .notification {
   /* The actual notification */
   border-radius: 16px;
-  margin: 10px;
+  margin: 11px;
   border: 3px solid @noti-border-color;
-  padding: 8px;
+  /* padding: 8px; */
   transition: background 0.15s ease-in-out;
-  background: @noti-bg;
+  background: @cc-bg;
 }
 .control-center {
   /* The Control Center which contains the old notifications + widgets */
@@ -52,6 +53,15 @@
   background: @color-solid1;
   border-radius: 12px;
 }
+.notification-row .notification-background .notification .notification-default-action .notification-content .image {
+  /* Notification Primary Image */
+  -gtk-icon-effect: none;
+  border-radius: 100px;
+  border: 2px solid #FFFFFF;
+  /* Size in px */
+  margin: 4px;
+}
+
 /* End of my custom */
 
 .notification-row .notification-background .close-button {
@@ -119,14 +129,6 @@
   background: transparent;
   border-radius: 12px;
   padding: 4px;
-}
-
-.notification-row .notification-background .notification .notification-default-action .notification-content .image {
-  /* Notification Primary Image */
-  -gtk-icon-effect: none;
-  border-radius: 100px;
-  /* Size in px */
-  margin: 4px;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .app-icon {
