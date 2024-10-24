@@ -1,8 +1,9 @@
 #!/bin/bash
+# Attend la fin d'animation de swww
+sleep 2
 
 # Exécuter le script de génération des couleurs
 ~/.config/hypr/scripts/colors_generator.sh "$1" &&
-kde-material-you-colors -f /home/bnsplit/.cache/wal/wal &&
 echo "Couleurs générées avec succès."
 
 # Terminer les processus swaync et waybar

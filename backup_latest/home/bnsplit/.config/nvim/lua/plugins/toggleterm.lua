@@ -4,8 +4,8 @@ return {
 
   config = function()
     require("toggleterm").setup {
-      -- shell = "zsh",
-      shell = "fish",
+      shell = "zsh",
+      -- shell = "fish",
       float_opts = {
         border = "curved"
       },

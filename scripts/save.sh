@@ -29,7 +29,6 @@ items_to_backup=(
     # Folders in $HOME/.config
     "$HOME/.config/ags/"
     "$HOME/.config/fastfetch/"
-    "$HOME/.config/fish/"
     "$HOME/.config/gtk-3.0/"
     "$HOME/.config/gtk-4.0/"
     "$HOME/.config/qt6ct/"
@@ -52,7 +51,7 @@ items_to_backup=(
     "$HOME/.cache/wallpaper"
     "$HOME/.cache/wallpaper-blur"
     "$HOME/.fonts"
-    # "$HOME/.zen"
+    "$HOME/.zen"
 
     # Files in $HOME
     "$HOME/.bashrc"
@@ -63,10 +62,8 @@ items_to_backup=(
     "/etc/makepkg.conf"
     
     # Applications files
-    # "/usr/share/applications/opera.desktop"
-    # "/usr/share/applications/vivaldi-stable.desktop"
     "/usr/share/applications/google-chrome.desktop"
-    # "/usr/share/applications/brave-browser.desktop"
+    "/usr/share/applications/obsidian.desktop"
 )
 
 print_separator "Backing up files and folders to $BACKUP_DIR"

@@ -5,9 +5,8 @@
     "output" : "eDP-1",
     "modules-left": [
         "hyprland/workspaces",
-        "custom/cpu",
-		"memory"
-        // "mpris",
+        "custom/sys_infos"
+		// "memory"
     ],
     "modules-center": [
         "clock",
@@ -30,7 +29,7 @@
         "warp-on-scroll": true,
         "format": "{name}",
         "persistent-workspaces": {
-             "*": 3, 
+             "*": 2, 
         }
     },
     "mpris": {
@@ -70,14 +69,13 @@
     "clock": {
         "interval": 1,
         "format": "{:%a. %d %b. %H:%M:%S}",
-        // "on-click": "ags -t 'center-panel'",
         "locale": "fr_FR.UTF-8",
         "tooltip" :false,
     },
-    "memory": {
-        "format": "{}%  ",
-        "on-click": "kitty --class float-btop -e btop"
-    },
+    // "memory": {
+    //     "format": "{}%  ",
+    //     "on-click": "kitty --class float-btop -e btop"
+    // },
     "backlight": {
         "format": "{percent}%  ",
         "tooltip": true,
@@ -136,18 +134,17 @@
             "transition-left-to-right": false,
         },
         "modules": [
-            "custom/extend",
+            "custom/clipboard",
             "custom/colorpicker",
             "custom/screenshot",
             "custom/wallpaper",
-            "idle_inhibitor",
-            "custom/clipboard",
+            "idle_inhibitor"
 		]
     },
-    "custom/cpu": {
+    "custom/sys_infos": {
         "interval": 2,
         "format": "{}",
-        "exec": "~/.config/hypr/scripts/cpu_infos.sh",
+        "exec": "~/.config/hypr/scripts/sys_infos.sh",
         "tooltip": true,
         "tooltip-format": "{}",
         "on-click": "kitty --class float-btop -e btop"
@@ -158,22 +155,17 @@
         "tooltip-format": "exit",
         "on-click": "wlogout"
     },
-    "custom/extend": {
-        "format": " ",
-        "tooltip": false,
-        // "on-click": "ags -t 'right-panel'"
-    },
     "custom/update": {
         "interval": 60, 
         "exec": "yay -Qu | wc -l",
         "tooltip": true,
         "tooltip-format": "{} updates",
         "format": "  {}",
-        "on-click": "kitty --class update-applet -e yay -Syyu --noconfirm "
+        "on-click": "kitty --class update-applet -e ~/.config/hypr/scripts/updates.sh"
     },
     "custom/clipboard": {
         "on-click": "kitty --class clipse -e clipse",
-        "format": "  ",
+        "format": "  ",
         "tooltip": true,
         "tooltip-format": "clipboard",
     },

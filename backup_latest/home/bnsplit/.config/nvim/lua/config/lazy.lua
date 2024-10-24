@@ -13,6 +13,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   end
 end
 vim.opt.rtp:prepend(lazypath)
+
 require("lazy").setup({
   spec = {
     { { import = "plugins" }, { import = "plugins.lsp"} },
@@ -22,3 +23,15 @@ require("lazy").setup({
     border = "rounded"
   }
 })
+
+-- Fonction pour mettre à jour les plugins sans afficher la fenêtre
+-- local function update_plugins()
+--     require('lazy').update({ silent = true }) -- Met à jour les plugins silencieusement
+-- end
+
+-- Exécute la mise à jour des plugins au démarrage
+-- vim.api.nvim_create_autocmd("VimEnter", {
+--     callback = function()
+--         update_plugins()
+--     end,
+-- })

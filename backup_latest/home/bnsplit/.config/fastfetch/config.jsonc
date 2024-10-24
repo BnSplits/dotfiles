@@ -49,6 +49,11 @@
             "type": "uptime"
         },
         {
+            "key": "│ {#34}󰅐 os age  {#keys}│",
+            "text": "~/.config/fastfetch/os_age.sh",
+            "type": "command"
+        },
+        {
             "key": "│ {#35}{icon} distro  {#keys}│",
             "type": "os"
         },
