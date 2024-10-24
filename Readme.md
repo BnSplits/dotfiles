@@ -1,7 +1,7 @@
 # My Linux Dotfiles
 
-![](./screenshots/15-10-2024_23h42m20s.png)
-![](./screenshots/15-10-2024_23h42m56s.png)
-![](./screenshots/15-10-2024_23h45m52s.png)
-![](./screenshots/16-10-2024_14h28m28s.png)
-![](./screenshots/16-10-2024_14h29m53s.png)
+![](./screenshots/24-10-2024_02h37m27s.png)
+![](./screenshots/24-10-2024_02h39m10s.png)
+![](./screenshots/24-10-2024_02h39m53s.png)
+![](./screenshots/24-10-2024_02h41m39s.png)
+![](./screenshots/24-10-2024_02h42m31s.png)
