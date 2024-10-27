@@ -64,6 +64,8 @@ items_to_backup=(
     # Applications files
     "/usr/share/applications/google-chrome.desktop"
     "/usr/share/applications/obsidian.desktop"
+    "/usr/share/applications/zen-alpha.desktop"
+    "/usr/share/applications/bitwarden.desktop"
 )
 
 print_separator "Backing up files and folders to $BACKUP_DIR"

@@ -62,9 +62,10 @@ packages=(
     "tlp"
     "tlpui"
     "yazi"
+    "dolphin"
     "vim"
     "neovim"
-    "zen-browser-bin"
+    "zen-browser-avx2-bin"
     "gnome-weather"
     "extension-manager"
     "gnome-text-editor"
@@ -252,13 +253,20 @@ function restore_backup() {
             local makepkgconf_dest="/etc/makepkg.conf"
             sudo cp "$makepkgconf_source" "$makepkgconf_dest" && echo_success "makepkg.conf replaced in /etc/"
 
-            local chrome_desktop_source="$ARCHIVE_BACKUP/usr/share/applications/google-chrome.desktop"
-            local chrome_desktop_dest="/usr/share/applications/google-chrome.desktop"
-            sudo cp "$chrome_desktop_source" "$chrome_desktop_dest" && echo_success "google-chrome.desktop replaced in /usr/share/applications/"
+            copy_desktop_file() {
+                local source="$1"
+                local dest="$2"
+                sudo cp "$source" "$dest" && echo_success "$(basename "$dest") replaced in /usr/share/applications/"
+            }
+            local desktop_files=(
+                "google-chrome.desktop"
+                "obsidian.desktop"
+                "zen-alpha.desktop"
+            )
 
-            local obsidian_source="$ARCHIVE_BACKUP/usr/share/applications/obsidian.desktop"
-            local obsidian_dest="/usr/share/applications/obsidian.desktop"
-            sudo cp "$obsidian_source" "$ obsidian_dest" && echo_success "obsidian.desktop replaced in /usr/share/applications/"
+for file in "${desktop_files[@]}"; do
+    copy_desktop_file "$ARCHIVE_BACKUP/usr/share/applications/$file" "/usr/share/applications/$file"
+done
 
             echo_success "Restoration complete"
         fi
@@ -338,6 +346,7 @@ function hypr_config() {
             "qt6ct-kde"
             "qt6-wayland"
             "breeze"
+            "breeze5"
             "swaync"
             "python-pywal16"
             "brightnessctl"
