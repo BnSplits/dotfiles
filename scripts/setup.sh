@@ -66,6 +66,7 @@ packages=(
     "vim"
     "neovim"
     "zen-browser-avx2-bin"
+    "vdhcoapp"
     "gnome-weather"
     "extension-manager"
     "gnome-text-editor"
@@ -200,16 +201,6 @@ function install_megasync() {
         echo_arrow "Installing Megasync..."
         sudo pacman -U "$megasync_pkg" --noconfirm || echo_error "Failed to install Megasync"
         rm -f "$megasync_pkg"
-    fi
-}
-
-# Install Video Download Helper
-function install_vdh() {
-    print_separator "Installing Video Download Helper"
-    if confirm "Do you want to install Video Download Helper?"; then
-        cd "./scripts/vdhcoapp-2.0.19/"
-        ./vdhcoapp install
-        cd
     fi
 }
 
@@ -400,7 +391,6 @@ function main() {
     configure_tlp
     savedesktop_config
     install_megasync
-    install_vdh
     restore_backup
     configure_printer
     configure_git
