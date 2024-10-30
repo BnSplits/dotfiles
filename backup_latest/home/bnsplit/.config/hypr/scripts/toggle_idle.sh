@@ -1,6 +1,6 @@
 #!/bin/bash
 
-filepath="$HOME/.config/hypr/global/zzz.png"
+filepath="$HOME/.icons/Papirus/64x64/apps/sleep.svg"
 # Vérifier si hypridle est en cours d'exécution
 if pgrep -x "hypridle" > /dev/null
 then

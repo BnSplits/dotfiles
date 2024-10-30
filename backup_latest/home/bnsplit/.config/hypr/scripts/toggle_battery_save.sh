@@ -30,7 +30,7 @@ if grep -q "decoration:blur:enabled = false" "$hyprland_file"; then
     # Modifier le backend à swww
     set_backend swww
     # Notification
-    notify-send "Battery" "<b><i>Save mode deactivated ! </i></b>" -i "$HOME/.config/hypr/global/charging-white.png" -t "5000"
+    notify-send "Battery" "<b><i>Save mode deactivated ! </i></b>" -i "$HOME/.icons/Papirus/64x64/apps/utilities-energy-monitor.svg" -t "5000"
 elif grep -q "decoration:blur:enabled = true" "$hyprland_file"; then
     # Remplacer par "false"
     sed -i 's/decoration:blur:enabled = true/decoration:blur:enabled = false/' "$hyprland_file"
@@ -39,8 +39,10 @@ elif grep -q "decoration:blur:enabled = true" "$hyprland_file"; then
     set_brightness 20
     # Modifier le backend à hyprpaper
     set_backend hyprpaper
+    # Assure que hypridle est activé
+    hypridle &
     # Notification
-    notify-send "Battery" "<b><i>Save mode activated ! </i></b>" -i "$HOME/.config/hypr/global/charging-white.png" -t "5000"
+    notify-send "Battery" "<b><i>Save mode activated ! </i></b>" -i "$HOME/.icons/Papirus/64x64/apps/utilities-energy-monitor.svg" -t "5000"
 else
     echo "No decoration:blur:enabled line found"
 fi

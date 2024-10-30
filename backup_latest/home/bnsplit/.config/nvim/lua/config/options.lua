@@ -1,61 +1,58 @@
 local opt = vim.opt
 
-opt.scrolloff = 8  -- Affiche toujours 8 lignes au-dessus et en dessous du curseur
+-- Scrolling behavior and line display
+opt.scrolloff = 8  -- Always show 8 lines above and below the cursor
+opt.number = true  -- Show absolute line numbers
+opt.relativenumber = false  -- Disable relative line numbers
 
-opt.number = true  -- Affiche les numéros de ligne absolus
+-- Tab and indentation settings
+opt.tabstop = 2  -- Width of a tab character: 4 spaces
+opt.shiftwidth = 2  -- Indent level when using indentation commands
+opt.expandtab = true  -- Convert tabs to spaces
+opt.autoindent = true  -- Enable automatic indentation
 
-opt.relativenumber = true  -- Affiche les numéros de ligne relatifs par rapport à la ligne actuelle
+-- Line display and wrapping
+opt.wrap = true  -- Enable line wrapping for long lines
+opt.showbreak = "󱞪    "  -- Prefix shown on wrapped lines
 
-opt.tabstop = 4  -- Définit la largeur d'un tab en tant que 2 espaces
+-- Search settings
+opt.ignorecase = true  -- Ignore case when searching
+opt.smartcase = true  -- Enable case sensitivity if the search query contains uppercase letters
 
-opt.shiftwidth = 4  -- Définit le niveau de décalage lors de l'utilisation des touches de tabulation comme étant 2 espaces
+-- Appearance
+opt.cursorline = true  -- Highlight the current line
+opt.termguicolors = true  -- Enable 24-bit colors in the terminal
+opt.background = "dark"  -- Set background to dark theme
+opt.signcolumn = "yes"  -- Always show the sign column (e.g., for errors and warnings)
 
-opt.expandtab = true  -- Convertit les tabulations en espaces
+-- Backspace behavior
+opt.backspace = "indent,eol,start"  -- Allow backspace to work on indentations, end of line, and beginning of line
 
-opt.autoindent = false  -- Désactive l'auto-indentation
+-- System clipboard usage
+opt.clipboard:append("unnamedplus")  -- Use the system clipboard for copy-pasting
 
-opt.wrap = false  -- Désactive le retour à la ligne automatique des lignes longues
+-- Window behavior
+opt.splitright = true  -- Open new vertical windows to the right
+opt.splitbelow = true  -- Open new horizontal windows below
 
-opt.ignorecase = true  -- Ignore la casse lors de la recherche
+-- Session options
+vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 
-opt.smartcase = true  -- Active la sensibilité à la casse si la recherche contient des majuscules
-
-opt.cursorline = true  -- Active la mise en surbrillance de la ligne courante
-
-opt.termguicolors = true  -- Active les couleurs 24-bit (true colors) dans le terminal
-
-opt.background = "dark"  -- Définit le thème de fond sur "dark" (fond sombre)
-
-opt.signcolumn = "yes"  -- Toujours afficher la colonne des signes (e.g., pour les erreurs et autres)
-
-opt.backspace = "indent,eol,start"  -- Configure la touche de retour arrière pour supprimer l'indentation, la fin de ligne, et le début de la ligne
-
-opt.clipboard:append("unnamedplus")  -- Utilise le registre du système (+) pour le copier-coller
-
-opt.splitright = true  -- Ouvre les nouvelles fenêtres verticales à droite
-
-opt.splitbelow = true  -- Ouvre les nouvelles fenêtres horizontales en dessous
-
-vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"  -- Configure les options de session pour inclure divers éléments comme les buffers, les répertoires courants, etc.
-
--- Surbrillance temporaire après une action de yank (copie)
+-- Temporary highlight after a yank (copy) action
 vim.api.nvim_create_autocmd("TextYankPost", {
   group = vim.api.nvim_create_augroup("YankHighlight", { clear = true }),
   pattern = "*",
   callback = function()
     vim.highlight.on_yank({
-      higroup = "IncSearch",  -- Le groupe de surlignage que tu veux utiliser
-      timeout = 70,  -- Durée du surlignage en millisecondes
+      higroup = "IncSearch",  -- Highlight group
+      timeout = 150,  -- Duration in milliseconds
     })
   end,
 })
 
-opt.undofile = true  -- Activer l'undo persistant
-
--- Spécifier le répertoire où les fichiers d'undo seront stockés
--- Crée le répertoire si nécessaire
+-- Enable persistent undo and set undo directory
+opt.undofile = true  -- Enable persistent undo
 local undo_dir = vim.fn.expand("~/.config/nvim/undo")
 if vim.fn.isdirectory(undo_dir) == 0 then
   vim.fn.mkdir(undo_dir, "p")
 end
-

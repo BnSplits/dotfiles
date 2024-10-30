@@ -11,7 +11,7 @@ return {
     vim.keymap.set('n', '<leader>fs', builtin.grep_string, { desc = "Find string under cursor" })
     vim.keymap.set('n', '<leader>ft', "<cmd>TodoTelescope<CR>", { desc = "Find todos" })
     vim.keymap.set({ "n", "v" }, '<leader>fc', builtin.current_buffer_fuzzy_find, { desc = "Current buffer fuzzy find" })
-    -- vim.keymap.set('n', '<leader>fb', builtin.buffers, {desc = "Find buffers"})
+    vim.keymap.set('n', '<leader>fb', builtin.buffers, {desc = "Find buffers"})
     --
     telescope.load_extension("fzf")
   end

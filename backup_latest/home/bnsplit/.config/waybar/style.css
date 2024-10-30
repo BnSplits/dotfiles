@@ -2,8 +2,7 @@
 * {
   border: none;
   font-family: sans-serif;
-  /* font-family: "JetBrainsMono", sans-serif; */
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 800;
   animation-timing-function: steps(12);
   animation-duration: 0s;
@@ -59,11 +58,7 @@ tooltip label {
 }
 
 #clock {
-    font-size: 18px;
-}
-
-#bluetooth {
-    font-size: 20px;
+    font-style: italic;
 }
 
 #window {

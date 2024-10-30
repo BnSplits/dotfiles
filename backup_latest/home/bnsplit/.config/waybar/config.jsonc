@@ -6,7 +6,6 @@
     "modules-left": [
         "hyprland/workspaces",
         "custom/sys_infos"
-		// "memory"
     ],
     "modules-center": [
         "clock",
@@ -29,7 +28,7 @@
         "warp-on-scroll": true,
         "format": "{name}",
         "persistent-workspaces": {
-             "*": 2, 
+             "*": 1, 
         }
     },
     "mpris": {
@@ -72,10 +71,6 @@
         "locale": "fr_FR.UTF-8",
         "tooltip" :false,
     },
-    // "memory": {
-    //     "format": "{}%  ",
-    //     "on-click": "kitty --class float-btop -e btop"
-    // },
     "backlight": {
         "format": "{percent}%  ",
         "tooltip": true,

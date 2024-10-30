@@ -29,11 +29,11 @@ return {
       },
       auto_attach                  = true,
       attach_to_untracked          = false,
-      current_line_blame           = false, -- Toggle with `:Gitsigns toggle_current_line_blame`
+      current_line_blame           = true, -- Toggle with `:Gitsigns toggle_current_line_blame`
       current_line_blame_opts      = {
         virt_text = true,
         virt_text_pos = 'eol', -- 'eol' | 'overlay' | 'right_align'
-        delay = 1000,
+        delay = 0,
         ignore_whitespace = false,
         virt_text_priority = 100,
       },
@@ -77,22 +77,19 @@ return {
         end)
 
         -- Actions
-        map('n', '<leader>hs', gitsigns.stage_hunk, { desc = "Stage the current hunk" })
-        map('n', '<leader>hr', gitsigns.reset_hunk, { desc = "Reset the current hunk" })
-        map('v', '<leader>hs', function() gitsigns.stage_hunk { vim.fn.line('.'), vim.fn.line('v') } end, { desc = "Stage the selected hunk" })
-        map('v', '<leader>hr', function() gitsigns.reset_hunk { vim.fn.line('.'), vim.fn.line('v') } end, { desc = "Reset the selected hunk" })
-        map('n', '<leader>hS', gitsigns.stage_buffer, { desc = "Stage the entire buffer" })
-        map('n', '<leader>hu', gitsigns.undo_stage_hunk, { desc = "Undo the last stage operation" })
-        map('n', '<leader>hR', gitsigns.reset_buffer, { desc = "Reset the entire buffer" })
-        map('n', '<leader>hp', gitsigns.preview_hunk, { desc = "Preview the current hunk" })
-        map('n', '<leader>hb', function() gitsigns.blame_line { full = true } end, { desc = "Blame the current line" })
-        map('n', '<leader>tb', gitsigns.toggle_current_line_blame, { desc = "Toggle inline blame for the current line" })
-        map('n', '<leader>hd', gitsigns.diffthis, { desc = "View diff of the current buffer" })
-        map('n', '<leader>hD', function() gitsigns.diffthis('~') end, { desc = "View diff with the previous revision" })
-        map('n', '<leader>td', gitsigns.toggle_deleted, { desc = "Toggle showing deleted lines in the buffer" })
-
-        -- Text object
-        map({ 'o', 'x' }, 'ih', ':<C-U>Gitsigns select_hunk<CR>', { desc = "Select a Git hunk" })
+        map('n', '<leader>gb', function() gitsigns.blame_line { full = true } end, { desc = "Blame the current line" })
+        -- map('n', '<leader>gD', function() gitsigns.diffthis('~') end, { desc = "View diff with the previous revision" })
+        map('n', '<leader>gd', gitsigns.diffthis, { desc = "View diff of the current buffer" })
+        map('n', '<leader>gp', gitsigns.preview_hunk, { desc = "Preview the current hunk" })
+        map('n', '<leader>gr', gitsigns.reset_hunk, { desc = "Reset the current hunk" })
+        map('v', '<leader>gr', function() gitsigns.reset_hunk { vim.fn.line('.'), vim.fn.line('v') } end, { desc = "Reset the selected hunk" })
+        map('n', '<leader>gR', gitsigns.reset_buffer, { desc = "Reset the entire buffer" })
+        map('n', '<leader>gs', gitsigns.stage_hunk, { desc = "Stage the current hunk" })
+        map('v', '<leader>gs', function() gitsigns.stage_hunk { vim.fn.line('.'), vim.fn.line('v') } end, { desc = "Stage the selected hunk" })
+        map('n', '<leader>gS', gitsigns.stage_buffer, { desc = "Stage the entire buffer" })
+        map('n', '<leader>gtb', gitsigns.toggle_current_line_blame, { desc = "Toggle inline blame for the current line" })
+        map('n', '<leader>gtd', gitsigns.toggle_deleted, { desc = "Toggle showing deleted lines in the buffer" })
+        map('n', '<leader>gu', gitsigns.undo_stage_hunk, { desc = "Undo the last stage operation" })
       end
     }
   end

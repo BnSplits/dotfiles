@@ -38,6 +38,6 @@ return {
         async = false,
         timeout_ms = 1000,
       })
-    end, { desc = "Format buffer or range (in visual mode)" })
+    end, { desc = "Format current buffer or slection" })
   end
 }

@@ -137,11 +137,11 @@ return {
               -- .. " plugins in "
               -- .. ms
               -- .. "ms"
-              " Let's do some cool stuff !"
+              " 🍌 Do you likes bananas ? 🍌 "
           pcall(vim.cmd.AlphaRedraw)
         end,
       })
-      vim.keymap.set("n", "<leader>A", "<cmd>Alpha<CR>", { desc = "Show alpha", silent = true })
+      vim.keymap.set("n", "<leader>a", "<cmd>Alpha<CR>", { desc = "Show alpha", silent = true })
     end,
   },
 }

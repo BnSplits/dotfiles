@@ -48,6 +48,9 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias ls='ls --color'
 alias z='clear && zsh'
+alias n='nvim'
+alias vim='nvim'
+alias run="/usr/local/bin/launch_with_wayland.sh"
 
 # Shell integration
 eval "$(fzf --zsh)"

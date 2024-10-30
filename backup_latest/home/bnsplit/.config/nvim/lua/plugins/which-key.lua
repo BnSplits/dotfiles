@@ -18,34 +18,34 @@ return {
         end,
         desc = "Buffer Local Keymaps (which-key)",
       },
-      {
-        "<leader>b",
-        "<cmd>Telescope buffers<CR>",
-        desc = "Buffers" -- Group for managing buffers
-      },
-      {
-        "<leader>C",
-        "<cmd>cd %:p:h<CR>",
-        desc = "Change Directory" -- Group for changing directories
-      },
+      -- {
+      --   "<leader>b",
+      --   "<cmd>Telescope buffers<CR>",
+      --   desc = "Buffers" -- Group for managing buffers
+      -- },
       {
         "<leader>f",
-        "<cmd>Telescope find_files<CR>",
+        "",
         desc = "Fuzzy Finder" -- Group for fuzzy finding files
       },
       {
         "<leader>r",
-        "<cmd>lua vim.lsp.buf.rename()<CR>",
+        "",
+        desc = "Renames" -- Group for fuzzy finding files
+      },
+      {
+        "<leader>l",
+        "",
         desc = "LSP Actions" -- Group for LSP actions
       },
       {
         "<leader>s",
-        "<cmd>split<CR>",
+        "",
         desc = "Split" -- Group for split actions
       },
       {
         "<leader>x",
-        "<cmd>lua require('dap').toggle_breakpoint()<CR>",
+        "",
         desc = "Debug" -- Group for debugging actions
       },
       {
@@ -54,18 +54,15 @@ return {
         desc = "Change Directory"
       },
       {
-        "<leader>t",
+        "<leader>gt",
         "",
         desc = "Toggle gitlens actions"
       },
       {
-        "<leader>h",
+        "<leader>g",
         "",
-        desc = "Hunk gitlens actions"
+        desc = "Gitlens actions"
       },
-
-
-
     },
   }
 }

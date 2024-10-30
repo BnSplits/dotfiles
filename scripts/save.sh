@@ -62,10 +62,12 @@ items_to_backup=(
     "/etc/makepkg.conf"
     
     # Applications files
-    "/usr/share/applications/google-chrome.desktop"
-    "/usr/share/applications/obsidian.desktop"
-    "/usr/share/applications/zen-alpha.desktop"
-    "/usr/share/applications/bitwarden.desktop"
+    # WARN: Don't uncoment to preserve .desktop files with the launch with wayland modifications
+    # "/usr/share/applications/google-chrome.desktop"
+    # "/usr/share/applications/obsidian.desktop"
+    # "/usr/share/applications/zen-alpha.desktop"
+    # "/usr/share/applications/bitwarden.desktop"
+    # "/usr/share/applications/code.desktop"
 )
 
 print_separator "Backing up files and folders to $BACKUP_DIR"

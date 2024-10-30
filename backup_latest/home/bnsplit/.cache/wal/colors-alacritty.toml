@@ -1,18 +1,18 @@
 [colors.primary]
-background = "#020209"
-foreground = "#bfbfc1"
+background = "#0B1011"
+foreground = "#c2c3c3"
 
 [colors.cursor]
-text = "#020209"
-cursor = "#bfbfc1"
+text = "#0B1011"
+cursor = "#c2c3c3"
 
 [colors.vi_mode_cursor]
-text = "#020209"
-cursor = "#bfbfc1"
+text = "#0B1011"
+cursor = "#c2c3c3"
 
 [colors.search.matches]
-foreground = "#020209"
-background = "#bfbfc1"
+foreground = "#0B1011"
+background = "#c2c3c3"
 
 [colors.search.focused_match]
 foreground = "CellBackground"
@@ -23,40 +23,40 @@ foreground = "None"
 background = "None"
 
 [colors.footer_bar]
-foreground = "#535365"
-background = "#bfbfc1"
+foreground = "#58666b"
+background = "#c2c3c3"
 
 [colors.selection]
 text = "CellBackground"
 background = "CellForeground"
 
 [colors.normal]
-black = "#020209"
-red = "#A42621"
-green = "#EA1608"
-yellow = "#DD2014"
-blue = "#EC5829"
-magenta = "#BE9771"
-cyan = "#719591"
-white = "#bfbfc1"
+black = "#0B1011"
+red = "#324A2F"
+green = "#545233"
+yellow = "#2D3944"
+blue = "#37484D"
+magenta = "#5A5C54"
+cyan = "#817951"
+white = "#c2c3c3"
 
 [colors.bright]
-black = "#535365"
-red = "#A42621"
-green = "#EA1608"
-yellow = "#DD2014"
-blue = "#EC5829"
-magenta = "#BE9771"
-cyan = "#719591"
-white = "#bfbfc1"
+black = "#58666b"
+red = "#324A2F"
+green = "#545233"
+yellow = "#2D3944"
+blue = "#37484D"
+magenta = "#5A5C54"
+cyan = "#817951"
+white = "#c2c3c3"
 
 [colors.dim]
-black = "#bfbfc1"
-red = "#A42621"
-green = "#BE9771"
-yellow = "#DD2014"
-blue = "#EC5829"
-magenta = "#EA1608"
-cyan = "#719591"
-white = "#535365"
+black = "#c2c3c3"
+red = "#324A2F"
+green = "#5A5C54"
+yellow = "#2D3944"
+blue = "#37484D"
+magenta = "#545233"
+cyan = "#817951"
+white = "#58666b"
 
