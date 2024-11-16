@@ -27,7 +27,7 @@
   background: @noti-bg-focus;
 }
 
-/* My custom */
+/* INFO: My custom */
 
 .notification-row .notification-background {
   padding: 0;
@@ -61,8 +61,12 @@
   /* Size in px */
   margin: 4px;
 }
+.control-center .control-center-list .notification .notification-default-action,
+.control-center .control-center-list .notification .notification-action {
+  transition: opacity 0ms ease-in-out, background 0s ease-in-out;
+}
 
-/* End of my custom */
+/* INFO: End of my custom */
 
 .notification-row .notification-background .close-button {
   /* The notification Close Button */
@@ -297,10 +301,6 @@
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.7), 0 2px 6px 2px rgba(0, 0, 0, 0.3);
 }
 
-.control-center .control-center-list .notification .notification-default-action,
-.control-center .control-center-list .notification .notification-action {
-  transition: opacity 400ms ease-in-out, background 0.15s ease-in-out;
-}
 
 .control-center .control-center-list .notification .notification-default-action:hover,
 .control-center .control-center-list .notification .notification-action:hover {

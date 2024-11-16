@@ -96,8 +96,9 @@ return {
       dashboard.section.buttons.val = {
         dashboard.button("f", " " .. " Find file", "<cmd>Telescope find_files<CR>"),
         dashboard.button("o", " " .. " Old files", "<cmd>Telescope oldfiles<CR>"),
-        dashboard.button("c", " " .. " Config", "<cmd>:Neotree reveal dir=~/.config/nvim/<CR>"),
+        dashboard.button("c", " " .. " Config", "<cmd>:Oil --float ~/.config/nvim/<CR>"),
         dashboard.button("q", " " .. " Quit", "<cmd> qa <cr>"),
+        dashboard.button("l", "󰒲 " .. " Lazy update", "<cmd>Lazy update<cr>"),
       }
 
       for _, button in ipairs(dashboard.section.buttons.val) do

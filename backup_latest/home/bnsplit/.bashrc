@@ -1,5 +1,8 @@
 export TERMINAL=kitty
 export PATH=$HOME/.local/bin:$PATH
 
-alias run="/usr/local/bin/launch_with_wayland.sh"
-
+# Aliases
+alias ls='ls --color'
+alias z='clear && zsh'
+alias n='nvim'
+alias vim='nvim'

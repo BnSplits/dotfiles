@@ -49,16 +49,6 @@
         "dynamic-separator": " -|- ",
         "ignored-players": ["firefox","vlc"]
     },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "󰛊",
-            "deactivated": "󰾫"
-        },
-        "tooltip": true,
-        "tooltip-format-activated": "inhibitor ON",
-        "tooltip-format-deactivated": "inhibitor OFF",
-    },
     "tray": {
         "icon-size": 20,
         "spacing": 3,
@@ -133,7 +123,7 @@
             "custom/colorpicker",
             "custom/screenshot",
             "custom/wallpaper",
-            "idle_inhibitor"
+            "custom/idle_inhibitor"
 		]
     },
     "custom/sys_infos": {
@@ -152,11 +142,12 @@
     },
     "custom/update": {
         "interval": 60, 
-        "exec": "yay -Qu | wc -l",
+        "exec": "~/.config/hypr/scripts/check_updates.sh",
         "tooltip": true,
         "tooltip-format": "{} updates",
         "format": "  {}",
-        "on-click": "kitty --class update-applet -e ~/.config/hypr/scripts/updates.sh"
+        "on-click": "kitty --class update-applet-other-w -e ~/.config/hypr/scripts/updates.sh",
+        "on-click-right": "kitty --class update-applet-current-w -e ~/.config/hypr/scripts/updates.sh"
     },
     "custom/clipboard": {
         "on-click": "kitty --class clipse -e clipse",
@@ -191,4 +182,9 @@
         "tooltip": true,
         "tooltip-format": "{} notifications",
     },
+    "custom/idle_inhibitor": {
+      "interval": 1,
+      "exec": "if pgrep -x 'hypridle' > /dev/null; then echo ' ' ; else echo  ' '; fi",
+      "on-click": "source ~/.config/hypr/scripts/toggle_idle.sh"  
+    }
 }

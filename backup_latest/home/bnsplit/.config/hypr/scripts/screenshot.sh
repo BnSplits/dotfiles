@@ -7,7 +7,7 @@ screenshot_dir="$HOME/Images/Screenshots"
 mkdir -p "$screenshot_dir"
 
 # Générer le nom de fichier avec la date et l'heure actuelles
-filename="$(date +'%d-%m-%Y_%Hh%Mm%Ss').png"
+filename="$(date +'%Y-%m-%d_%Hh%Mm%Ss').png"
 
 # Chemin complet du fichier
 filepath="$screenshot_dir/$filename"

@@ -1,22 +1,6 @@
 // Inspired by Catnap
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-    // "logo": {
-    //     "type": "small",
-    //     "padding": {
-    //         "top": 7
-    //     }
-    // }, 
-    // "logo": {
-    //     "type": "kitty",
-    //    "source": "~/Images/Logos/logo2.png",
-    //     "width": 32,
-    //     "height": 16,
-    //    "padding": {
-    //        "top": 3,
-    //        "left": 1
-    //    }
-    // },
     
     "logo": {
         "source": "~/.config/fastfetch/logo.txt"
@@ -49,65 +33,65 @@
             "type": "uptime"
         },
         {
-            "key": "│ {#34}󰅐 os age  {#keys}│",
+            "key": "│ {#35}󰅐 os age  {#keys}│",
             "text": "~/.config/fastfetch/os_age.sh",
             "type": "command"
         },
         {
-            "key": "│ {#35}{icon} distro  {#keys}│",
+            "key": "│ {#36}{icon} distro  {#keys}│",
             "type": "os"
         },
         {
-            "key": "│ {#36} kernel  {#keys}│",
+            "key": "│ {#31} kernel  {#keys}│",
             "type": "kernel"
         },
         {
-            "key": "│ {#31}󰇄 desktop {#keys}│",
+            "key": "│ {#32}󰇄 desktop {#keys}│",
             "type": "de"
         },
         {
-            "key": "│ {#32} term    {#keys}│",
+            "key": "│ {#33} term    {#keys}│",
             "type": "terminal"
         },
         {
-            "key": "│ {#33} shell   {#keys}│",
+            "key": "│ {#34} shell   {#keys}│",
             "type": "shell"
         },
         {
-            "key": "│ {#34}󰍛 cpu     {#keys}│",
+            "key": "│ {#35}󰍛 cpu     {#keys}│",
             "type": "cpu",
             "showPeCoreCount": true,
             "temp": true
         },
         {
-            "key": "│ {#35}󰉉 disk    {#keys}│",
+            "key": "│ {#36}󰉉 disk    {#keys}│",
             "type": "disk",
             "folders": "/"
         },
         {
-            "key": "│ {#36}󰉉 home    {#keys}│",
+            "key": "│ {#31}󰉉 home    {#keys}│",
             "type": "disk",
             "folders": "/home"
         },
         {
-            "key": "│ {#31} memory  {#keys}│",
+            "key": "│ {#32} memory  {#keys}│",
             "type": "memory"
         },
         {
             "type": "swap",
-            "key": "│ {#32}󰓡 swap    {#keys}│"
+            "key": "│ {#33}󰓡 swap    {#keys}│"
         },
         {
             "type": "display",
-            "key": "│ {#33}󰍹 display {#keys}│"
+            "key": "│ {#34}󰍹 display {#keys}│"
         },
         {
             "type": "sound",
-            "key": "│ {#34} sound   {#keys}│"
+            "key": "│ {#35} sound   {#keys}│"
         },
         {
             "type": "player",
-            "key": "│ {#35}󰥠 player  {#keys}│"
+            "key": "│ {#36}󰥠 player  {#keys}│"
         },
         {
             "key": "├───────────┤",

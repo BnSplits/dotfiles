@@ -49,8 +49,11 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 alias ls='ls --color'
 alias z='clear && zsh'
 alias n='nvim'
-alias vim='nvim'
-alias run="/usr/local/bin/launch_with_wayland.sh"
+# alias vim='nvim'
+alias yo='yay -Rns $(yay -Qdtq)'
+alias ysyu='yay -Syu'
+alias rmdb='sudo rm /var/lib/pacman/db.lck'
+alias ddd="sudo dd bs=4M if=$1 of=$2 conv=fsync oflag=direct status=progress"
 
 # Shell integration
 eval "$(fzf --zsh)"
