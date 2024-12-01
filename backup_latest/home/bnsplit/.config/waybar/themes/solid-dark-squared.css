@@ -1,0 +1,69 @@
+@import "./defaults/default-squared.css";
+
+/* Colors */
+@define-color foreground #f1f1f1;
+@define-color background #000000;
+@define-color color0 #000000;
+@define-color color1 #1a1a1a;
+@define-color color2 #333333;
+@define-color color3 #4d4d4d;
+@define-color color4 #666666;
+@define-color color5 #808080;
+@define-color color6 #999999;
+@define-color color7 #b3b3b3;
+@define-color color8 #cccccc;
+@define-color color9 #e6e6e6;
+@define-color color10 #f1f1f1;
+@define-color color11 #f2f2f2;
+@define-color color12 #f3f3f3;
+@define-color color13 #f4f4f4;
+@define-color color14 #f5f5f5;
+@define-color color15 #f1f1f1;
+
+window#waybar {
+  background: @color1;
+}
+
+.module {
+  background: @color2;
+  color: #ffffff;
+  border-color: @foreground;
+}
+
+tooltip {
+  background: @background;
+  border-color: @foreground;
+}
+
+tooltip label {
+  color: @foreground;
+}
+
+#workspaces button {
+  border-color: transparent;
+}
+
+#workspaces button.active {
+  background: @color3;
+  border-color: @foreground;
+}
+
+#workspaces button:hover {
+  background: @color4;
+  border-color: @foreground;
+}
+
+#battery.warning {
+  color: red;
+  font-weight: bold;
+}
+
+#window {
+    background: transparent;
+    color: #FFFFFF;
+}
+
+.group-other .module {
+    background: transparent;
+    color: #FFFFFF;
+}

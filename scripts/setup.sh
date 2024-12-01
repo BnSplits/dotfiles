@@ -304,9 +304,9 @@ function configure_docker() {
         echo_arrow "Enabling Docker service..."
         sudo systemctl enable --now docker &&
             echo_success "Docker service enabled and started" &&
-            echo_arrow "Adding user to Docker group" &&
-            sudo usermod -aG docker $USER &&
-            echo_success "User added"
+            echo_arrow "adding user to docker group" &&
+            sudo usermod -ag docker $user &&
+            echo_success "user added"
     fi
 }
 

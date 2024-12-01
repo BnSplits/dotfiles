@@ -159,12 +159,18 @@ display-drun: "Apps";
 @import "~/.cache/wal/colors-rofi-dark.rasi"
 
 * {
-    border-radius: 20px;
+    border-radius: 0px;
     padding: 2px 4px;
 }
-
+#element {
+    border-radius: 4px;
+}
 #window {
     border: 1px;
     border-color: #ffffff;
     border-radius: 20px;
 }
+#scrollbar {
+    border-radius: 0px;
+}
+

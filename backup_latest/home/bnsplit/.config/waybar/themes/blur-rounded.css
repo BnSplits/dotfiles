@@ -1,0 +1,52 @@
+@import "../../../.cache/wal/colors-waybar.css";
+@import "../../hypr/colors/blur-colors-gtk.css";
+@import "../../hypr/colors/solid-colors-gtk.css";
+@import "./defaults/default-rounded.css";
+
+window#waybar {
+  background: @color-blur1;
+}
+
+.module {
+  background: @color2;
+  color: #ffffff;
+  border-color: @foreground;
+}
+
+tooltip {
+  background: @background;
+  border-color: @foreground;
+}
+
+tooltip label {
+  color: @foreground;
+}
+
+#workspaces button {
+  border-color: transparent;
+}
+
+#workspaces button.active {
+  background: @color3;
+  border-color: @foreground;
+}
+
+#workspaces button:hover {
+  background: @color4;
+  border-color: @foreground;
+}
+
+#battery.warning {
+  color: red;
+  font-weight: bold;
+}
+
+#window {
+    background: transparent;
+    color: #FFFFFF;
+}
+
+.group-other .module {
+    background: transparent;
+    color: #FFFFFF;
+}

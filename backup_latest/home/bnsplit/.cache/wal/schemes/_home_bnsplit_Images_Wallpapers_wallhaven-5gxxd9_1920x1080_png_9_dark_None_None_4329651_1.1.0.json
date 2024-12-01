@@ -1,0 +1,28 @@
+{
+    "checksum": "a670b667f0e286558dbc7d98cffc057e",
+    "wallpaper": "/home/bnsplit/Images/Wallpapers/wallhaven-5gxxd9_1920x1080.png",
+    "alpha": "100",
+    "special": {
+        "background": "#15181d",
+        "foreground": "#c4c5c6",
+        "cursor": "#c4c5c6"
+    },
+    "colors": {
+        "color0": "#15181d",
+        "color1": "#6F7A88",
+        "color2": "#B97987",
+        "color3": "#AB959C",
+        "color4": "#E3A1A3",
+        "color5": "#ECBDC1",
+        "color6": "#F5CFCF",
+        "color7": "#c4c5c6",
+        "color8": "#5e6573",
+        "color9": "#6F7A88",
+        "color10": "#B97987",
+        "color11": "#AB959C",
+        "color12": "#E3A1A3",
+        "color13": "#ECBDC1",
+        "color14": "#F5CFCF",
+        "color15": "#c4c5c6"
+    }
+}

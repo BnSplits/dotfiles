@@ -21,12 +21,12 @@ function print_separator() {
 }
 
 # Directory where backup files will be stored
-BACKUP_DIR="../backup_latest"
+BACKUP_DIR="$HOME/dev/dotfiles/backup_latest"
+LOG_FILE="$BACKUP_DIR/backup_log.txt"
 mkdir -p "$BACKUP_DIR/home" "$BACKUP_DIR/etc" || { echo_error "Unable to create backup directories"; exit 1; }
 
 # Folders and files to backup
 items_to_backup=(
-    # Folders in $HOME/.config
     "$HOME/.config/ags/"
     "$HOME/.config/fastfetch/"
     "$HOME/.config/gtk-3.0/"
@@ -42,37 +42,25 @@ items_to_backup=(
     "$HOME/.config/wlogout/"
     "$HOME/.config/yay/"
     "$HOME/.config/yazi/"
-
-    # Files in $HOME/.config
     "$HOME/.config/starship.toml"
-
-    # Folders in $HOME/.cache and other folders
     "$HOME/.cache/wal/"
     "$HOME/.cache/wallpaper"
     "$HOME/.cache/wallpaper-blur"
     "$HOME/.fonts"
     "$HOME/.zen"
-
-    # Files in $HOME
     "$HOME/.bashrc"
     "$HOME/.zshrc"
     "$HOME/.Xresources"
-
-    # Files in /etc
     "/etc/makepkg.conf"
-    
-    # Applications files
-    # WARN: Don't uncoment to preserve .desktop files with the launch with wayland modifications
-    # "/usr/share/applications/google-chrome.desktop"
-    # "/usr/share/applications/obsidian.desktop"
-    # "/usr/share/applications/zen-alpha.desktop"
-    # "/usr/share/applications/bitwarden.desktop"
-    # "/usr/share/applications/code.desktop"
 )
 
 print_separator "Backing up files and folders to $BACKUP_DIR"
 
+# Log the backup start time
+echo "Backup started at $(date)" >> "$LOG_FILE"
+
 # Copy files and folders to the backup directory
+saved_items=()
 for item in "${items_to_backup[@]}"; do
     if [ -e "$item" ]; then
         dest="$BACKUP_DIR/${item}"
@@ -86,8 +74,23 @@ for item in "${items_to_backup[@]}"; do
             echo_arrow "Copying file $item..."
             cp "$item" "$dest" || { echo_error "Error copying $item"; exit 1; }
         fi
+        saved_items+=("$item")
     else
         echo_warning "$item does not exist, skipping backup"
     fi
 done
+
+# Log the saved items
+if [ ${#saved_items[@]} -ne 0 ]; then
+    echo "Saved the following items:" >> "$LOG_FILE"
+    for saved_item in "${saved_items[@]}"; do
+        echo "- $saved_item" >> "$LOG_FILE"
+    done
+else
+    echo "No items were saved during this backup." >> "$LOG_FILE"
+fi
+
+# Log the backup completion
+echo "Backup completed at $(date)" >> "$LOG_FILE"
+echo -e "-------------------------------------------------------------------------------\n" >> "$LOG_FILE"
 echo_success "Backup completed."

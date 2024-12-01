@@ -1,8 +1,10 @@
 #!/bin/bash
 
 ### Cache wallpaper image
-# Copy the specified wallpaper to the cache directory
+# Copy the specified wallpaper to the cache directory and to zen browser tabliss extension bg
 cp "$1" ~/.cache/wallpaper
+cp "$1" $HOME/.zen/cy6bohdq.Default\ \(alpha\)/storage/default/moz-extension+++bf4e9f9e-baf2-473f-a8f9-e5ee529c35e1^userContextId=4294967295/idb/3647222921wleabcEoxlt-eengsairo.files/1
+
 
 ### Apply color scheme using 'wal'
 # Generate a color scheme based on the wallpaper
@@ -31,7 +33,7 @@ done < "$HOME/.cache/wal/colors"
 i=1
 while IFS= read -r line; do
     # Create 'blur' and 'solid' versions of each color in rgba format
-    blur_color="rgba(${line},0.7)"
+    blur_color="rgba(${line},0.4)"
     solid_color="rgba(${line},1)"
     # Write the formatted colors to the respective GTK config files
     echo "@define-color color-blur$i $blur_color;" >> "$HOME/.config/hypr/colors/blur-colors-gtk.css"

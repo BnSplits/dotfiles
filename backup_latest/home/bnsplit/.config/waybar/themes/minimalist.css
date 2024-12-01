@@ -1,0 +1,53 @@
+@import "../../../.cache/wal/colors-waybar.css";
+@import "../../hypr/colors/solid-colors-gtk.css";
+@import "../../hypr/colors/blur-colors-gtk.css";
+
+* {
+  border: none;
+  animation-timing-function: steps(12);
+  animation-duration: 0s;
+  border-radius: 999px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#workspaces button {
+  border-radius: 999px;
+  border: 1px solid;
+  margin: 2px 2px;
+  padding: 0px 4px;
+  background: @color-solid1;
+  border: 1px solid @color-solid1;
+}
+
+#workspaces button.active {
+  background: @color3;
+  border: 1px solid @color-solid1;
+}
+
+#workspaces button:hover {
+  border: 1px solid;
+  background: @color4;
+}
+
+#workspaces {
+  border: 2px solid @color-solid1;
+  margin: 1px;
+}
+
+window#waybar {
+  background: @color-blur1;
+  border-radius: 0;
+}
+
+.module {
+  background: @color2;
+  color: #ffffff;
+  border-color: @foreground;
+}
+
+#window {
+  background: transparent;
+  color: #ffffff;
+  border-radius: 0;
+}

@@ -1,0 +1,129 @@
+@import "./defaults/default-rounded.css";
+
+/* Colors */
+@define-color foreground #fbf1c7; /* fg0 */
+@define-color background #282828; /* bg0 */
+@define-color color0 #1d2021; /* bg0_h */
+@define-color color1 #cc241d; /* red1 */
+@define-color color2 #98971a; /* green1 */
+@define-color color3 #d79921; /* yellow1 */
+@define-color color4 #458588; /* blue1 */
+@define-color color5 #b16286; /* purple1 */
+@define-color color6 #689d6a; /* aqua1 */
+@define-color color7 #d65d0e; /* orange1 */
+@define-color color8 #a89984; /* gray */
+@define-color color9 #fb4934; /* red2 */
+@define-color color10 #b8bb26; /* green2 */
+@define-color color11 #fabd2f; /* yellow2 */
+@define-color color12 #83a598; /* blue2 */
+@define-color color13 #d3869b; /* purple2 */
+@define-color color14 #8ec07c; /* aqua2 */
+@define-color color15 #fe8019; /* orange2 */
+
+.group-other .module {
+  color: #ffffff;
+}
+
+.module {
+  border-color: @foreground;
+}
+
+tooltip {
+  background: @background;
+  border-color: @foreground;
+}
+
+tooltip label {
+  color: @foreground;
+}
+
+#backlight {
+  background: @color9;
+  color: @color0;
+}
+
+#battery {
+  background: @color8;
+  color: @color0;
+}
+
+#battery.warning {
+  color: red;
+}
+
+#bluetooth {
+  background: @color11;
+  color: @color0;
+}
+
+#clock {
+  background: @color5;
+  color: @color0;
+}
+
+#custom-clipboard {
+  background: @color13;
+  color: @color0;
+}
+
+#custom-power {
+  background: @color14;
+  color: @color0;
+}
+
+#custom-swaync {
+  background: @color7;
+  color: @color0;
+}
+
+#custom-sys_infos {
+  background: @color10;
+  color: @color0;
+}
+
+#custom-update {
+  background: @color6;
+  color: @color0;
+}
+
+#pulseaudio {
+  background: @color10;
+  color: @color0;
+}
+
+#tray {
+  background: @color15;
+  color: @foreground;
+}
+
+#window {
+  background: transparent;
+  color: #ffffff;
+}
+
+#workspaces {
+  background: #3c3836;
+  color: @foreground;
+}
+
+#workspaces button {
+  border-color: @color15;
+  background: @color15;
+  color: @color0;
+}
+
+#workspaces button.active {
+  background: @color4;
+  color: @background;
+  border-color: @color4;
+}
+
+#workspaces button:hover {
+  background: @color2;
+  color: @color0;
+  border-color: @color2;
+}
+
+window#waybar {
+  background: @color0;
+}

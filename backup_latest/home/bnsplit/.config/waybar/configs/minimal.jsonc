@@ -1,0 +1,191 @@
+{
+    "position": "top", 
+    "height": 15, 
+    "spacing": 2,
+    "output" : "eDP-1",
+    // "modules-left": [
+    //     "hyprland/workspaces",
+    //     "custom/sys_infos"
+    // ],
+    "modules-center": [
+        // "clock",
+        "hyprland/workspaces",
+    ],
+    // "modules-right": [
+    //     "custom/update",
+    //     "custom/swaync",
+    //     "battery",
+    //     "backlight",
+    //     "pulseaudio",
+    //     "bluetooth",
+    //     "tray",
+    //     "group/other",
+    //     "custom/power",
+    // ],
+    /* Modules configuration */
+    "hyprland/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": true,
+        "warp-on-scroll": true,
+        "format": "",
+        "persistent-workspaces": {
+             "*": 1, 
+        }
+    },
+  //   "mpris": {
+  //       "interval": 1,
+  //       "tooltip": false,
+  //       "format": "{player_icon} {dynamic}",
+  //       "format-paused": "{status_icon} {dynamic}",
+  //       "player-icons": {
+  //           "default": " ",
+  //           "spotify": "  "
+  //       },
+  //       "status-icons": {
+  //           "paused": "⏸"
+  //       },
+  //       "artist-len": 20,
+  //       "title-len": 20,
+  //       "dynamic-order": ["artist", "title"],
+  //       "dynamic-separator": " -|- ",
+  //       "ignored-players": ["firefox","vlc"]
+  //   },
+  //   "tray": {
+  //       "icon-size": 20,
+  //       "spacing": 3,
+  //       "show-passive-items": true,
+  //       "reverse-direction": true,
+  //   },
+  //   "clock": {
+  //       "interval": 1,
+  //       "format": "{:%a. %d %b. %H:%M:%S}",
+  //       "locale": "fr_FR.UTF-8",
+  //       "tooltip" :false,
+  //   },
+  //   "backlight": {
+  //       "format": "{percent}%  ",
+  //       "tooltip": true,
+  //       "tooltip-format": "{percent}% brightness",
+  //   },
+  //   "battery": {
+  //       "interval": 5,
+  //       "states": {
+  //           "warning": 25
+  //       },
+  //       "format": " {capacity}%  ",
+  //       "format-charging": " {capacity}%  ",
+  //       "format-full": " {capacity}%",
+  //       "format-plugged": " {capacity}% ",
+  //       "tooltip-format": "{time}   / {health}% ",
+  //       "on-click": "source ~/.config/hypr/scripts/toggle_battery_save.sh",
+  //       "on-click-right": "kitty btop",
+  //   },
+  //   "pulseaudio": {
+  //       "tooltip": true,
+  //       "tooltip-format": "pavucontrol",
+  //       "format": "{volume}% {icon} ",
+  //       "format-bluetooth": "{volume}% {icon} ",
+  //       "format-bluetooth-muted": "{volume}%  {icon} ",
+  //       "format-muted": "{volume}%  ",
+  //       "format-icons": {
+  //           "headphone": "",
+  //           "hands-free": "",
+  //           "headset": "",
+  //           "phone": "",
+  //           "portable": "",
+  //           "car": "",
+  //           "default": ["", "", ""]
+  //       },
+  //       "on-click": "pavucontrol"
+  //   },
+  //   "bluetooth": {
+  //       "on-click": "blueman-manager",
+	 //    "format": "  ",
+  //       "format-disabled": " 󰂲 ",
+  //       "format-on": "  ",
+  //       "format-off": " 󰂲 ",
+	 //    "format-connected": " 󰂱 ",
+	 //    "format-connected-battery": "󰂱 {device_battery_percentage}%",
+	 //    "tooltip-format": "{num_connections} connected",
+	 //    "tooltip-format-connected": "{num_connections} connected\n\n{device_enumerate}",
+	 //    "tooltip-format-enumerate-connected": "{device_alias}",
+	 //    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_battery_percentage}%"
+  //   },
+  //   "group/other": {
+  //       "orientation": "inherit",
+  //       "click-to-reveal": true,
+  //       "drawer": {
+  //           "transition-duration": 400,
+  //           "children-class": "group-other",
+  //           "transition-left-to-right": false,
+  //       },
+  //       "modules": [
+  //           "custom/clipboard",
+  //           "custom/colorpicker",
+  //           "custom/screenshot",
+  //           "custom/wallpaper",
+  //           "custom/idle_inhibitor"
+		// ]
+  //   },
+  //   "custom/sys_infos": {
+  //       "interval": 2,
+  //       "format": "{}",
+  //       "exec": "~/.config/hypr/scripts/sys_infos.sh",
+  //       "tooltip": true,
+  //       "tooltip-format": "{}",
+  //       "on-click": "kitty --class float-btop -e btop"
+  //   },
+  //   "custom/power": {
+  //       "format": " ",
+  //       "tooltip": true,
+  //       "tooltip-format": "exit",
+  //       "on-click": "wlogout"
+  //   },
+  //   "custom/update": {
+  //       "interval": 60, 
+  //       "exec": "~/.config/hypr/scripts/check_updates.sh",
+  //       "tooltip": true,
+  //       "tooltip-format": "{} updates",
+  //       "format": "  {}",
+  //       "on-click": "kitty --class update-applet-other-w -e ~/.config/hypr/scripts/updates.sh",
+  //       "on-click-right": "kitty --class update-applet-current-w -e ~/.config/hypr/scripts/updates.sh"
+  //   },
+  //   "custom/clipboard": {
+  //       "on-click": "kitty --class clipse -e clipse",
+  //       "format": "  ",
+  //       "tooltip": true,
+  //       "tooltip-format": "clipboard",
+  //   },
+  //   "custom/screenshot":{
+  //       "on-click": "source ~/.config/hypr/scripts/screenshot.sh part",
+  //       "on-click-right": "source ~/.config/hypr/scripts/screenshot.sh full",
+  //       "format": " ",
+  //       "tooltip": true,
+  //       "tooltip-format": "screenshot",
+  //   },
+  //   "custom/colorpicker": {
+  //       "on-click": "hyprpicker -a",
+  //       "format": " ",
+  //       "tooltip": true,
+  //       "tooltip-format": "color-picker",
+  //   },
+  //   "custom/wallpaper": {
+  //       "on-click": "waypaper",
+  //       "format": " ",
+  //       "tooltip": true,
+  //       "tooltip-format": "select wallpaper",
+  //   },
+  //   "custom/swaync": {
+  //       "interval": 1,
+  //       "on-click": "swaync-client -t -sw",
+  //       "exec": "swaync-client -c",
+  //       "format": "  {}",
+  //       "tooltip": true,
+  //       "tooltip-format": "{} notifications",
+  //   },
+  //   "custom/idle_inhibitor": {
+  //     "interval": 1,
+  //     "exec": "if pgrep -x 'hypridle' > /dev/null; then echo ' ' ; else echo  ' '; fi",
+  //     "on-click": "source ~/.config/hypr/scripts/toggle_idle.sh"  
+  //   }
+}

@@ -1,0 +1,960 @@
+Backup started at lun. 25 nov. 2024 06:02:09 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at lun. 25 nov. 2024 06:02:12 GMT
+-------------------------------------------------------------------------------
+
+Backup started at lun. 25 nov. 2024 07:22:39 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at lun. 25 nov. 2024 07:22:52 GMT
+-------------------------------------------------------------------------------
+
+Backup started at lun. 25 nov. 2024 10:06:14 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at lun. 25 nov. 2024 10:06:20 GMT
+-------------------------------------------------------------------------------
+
+Backup started at lun. 25 nov. 2024 19:53:05 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at lun. 25 nov. 2024 19:53:13 GMT
+-------------------------------------------------------------------------------
+
+Backup started at lun. 25 nov. 2024 20:01:16 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at lun. 25 nov. 2024 20:01:25 GMT
+-------------------------------------------------------------------------------
+
+Backup started at mar. 26 nov. 2024 06:27:14 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at mar. 26 nov. 2024 06:27:27 GMT
+-------------------------------------------------------------------------------
+
+Backup started at mar. 26 nov. 2024 07:42:06 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at mar. 26 nov. 2024 07:42:16 GMT
+-------------------------------------------------------------------------------
+
+Backup started at mar. 26 nov. 2024 09:55:58 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at mar. 26 nov. 2024 09:56:07 GMT
+-------------------------------------------------------------------------------
+
+Backup started at mar. 26 nov. 2024 12:20:27 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at mar. 26 nov. 2024 12:20:39 GMT
+-------------------------------------------------------------------------------
+
+Backup started at mar. 26 nov. 2024 18:38:12 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at mar. 26 nov. 2024 18:38:21 GMT
+-------------------------------------------------------------------------------
+
+Backup started at mer. 27 nov. 2024 07:26:36 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at mer. 27 nov. 2024 07:26:45 GMT
+-------------------------------------------------------------------------------
+
+Backup started at mer. 27 nov. 2024 07:38:15 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at mer. 27 nov. 2024 07:38:25 GMT
+-------------------------------------------------------------------------------
+
+Backup started at mer. 27 nov. 2024 14:11:02 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at mer. 27 nov. 2024 14:11:11 GMT
+-------------------------------------------------------------------------------
+
+Backup started at mer. 27 nov. 2024 23:55:23 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at mer. 27 nov. 2024 23:55:33 GMT
+-------------------------------------------------------------------------------
+
+Backup started at jeu. 28 nov. 2024 05:55:33 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at jeu. 28 nov. 2024 05:55:41 GMT
+-------------------------------------------------------------------------------
+
+Backup started at jeu. 28 nov. 2024 14:52:55 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at jeu. 28 nov. 2024 14:53:06 GMT
+-------------------------------------------------------------------------------
+
+Backup started at jeu. 28 nov. 2024 20:01:08 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at jeu. 28 nov. 2024 20:01:18 GMT
+-------------------------------------------------------------------------------
+
+Backup started at ven. 29 nov. 2024 09:14:45 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at ven. 29 nov. 2024 09:14:50 GMT
+-------------------------------------------------------------------------------
+
+Backup started at ven. 29 nov. 2024 12:58:53 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at ven. 29 nov. 2024 12:59:03 GMT
+-------------------------------------------------------------------------------
+
+Backup started at ven. 29 nov. 2024 20:21:30 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at ven. 29 nov. 2024 20:21:38 GMT
+-------------------------------------------------------------------------------
+
+Backup started at sam. 30 nov. 2024 08:58:38 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at sam. 30 nov. 2024 08:58:47 GMT
+-------------------------------------------------------------------------------
+
+Backup started at sam. 30 nov. 2024 10:18:07 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at sam. 30 nov. 2024 10:18:17 GMT
+-------------------------------------------------------------------------------
+
+Backup started at sam. 30 nov. 2024 10:27:15 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at sam. 30 nov. 2024 10:27:25 GMT
+-------------------------------------------------------------------------------
+
+Backup started at sam. 30 nov. 2024 11:42:27 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at sam. 30 nov. 2024 11:42:37 GMT
+-------------------------------------------------------------------------------
+
+Backup started at sam. 30 nov. 2024 11:52:14 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at sam. 30 nov. 2024 11:52:24 GMT
+-------------------------------------------------------------------------------
+
+Backup started at sam. 30 nov. 2024 20:41:44 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at sam. 30 nov. 2024 20:41:47 GMT
+-------------------------------------------------------------------------------
+
+Backup started at sam. 30 nov. 2024 23:51:24 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at sam. 30 nov. 2024 23:51:34 GMT
+-------------------------------------------------------------------------------
+
+Backup started at dim. 01 déc. 2024 08:20:32 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at dim. 01 déc. 2024 08:20:36 GMT
+-------------------------------------------------------------------------------
+
+Backup started at dim. 01 déc. 2024 14:20:36 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at dim. 01 déc. 2024 14:20:39 GMT
+-------------------------------------------------------------------------------
+
+Backup started at dim. 01 déc. 2024 20:20:39 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at dim. 01 déc. 2024 20:20:49 GMT
+-------------------------------------------------------------------------------
+
+Backup started at dim. 01 déc. 2024 22:24:21 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at dim. 01 déc. 2024 22:24:31 GMT
+-------------------------------------------------------------------------------
+
+Backup started at dim. 01 déc. 2024 22:30:50 GMT
+Saved the following items:
+- /home/bnsplit/.config/ags/
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at dim. 01 déc. 2024 22:30:59 GMT
+-------------------------------------------------------------------------------
+

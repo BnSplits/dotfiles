@@ -32,9 +32,6 @@ check_updates() {
             # Update the temporary file with the new number of updates
             echo $available_updates > $temp_file
         fi
-    else
-        # If no updates are available, delete the temporary file
-        [[ -f $temp_file ]] && rm $temp_file
     fi
 }
 

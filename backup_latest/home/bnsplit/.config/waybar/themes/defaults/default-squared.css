@@ -1,0 +1,58 @@
+* {
+  border: none;
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  animation-timing-function: steps(12);
+  animation-duration: 0s;
+}
+
+.group-other .module {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+}
+
+.module {
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 3px;
+  padding: 4px 6px;
+}
+
+tooltip {
+  border: 2px solid;
+  border-radius: 16px;
+}
+
+#battery.warning {
+  color: red;
+  font-weight: bold;
+}
+
+#clock {
+  font-style: italic;
+}
+
+#window {
+  border: none;
+}
+
+#workspaces {
+  padding: 0;
+}
+
+#workspaces button {
+  border-radius: 5px;
+  margin: 3px 3px;
+  padding: 0 10px;
+  border: 1px solid;
+}
+
+#workspaces button.active {
+  border: 1px solid;
+}
+
+#workspaces button:hover {
+  border: 1px solid;
+}
