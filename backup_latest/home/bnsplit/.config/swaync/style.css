@@ -35,7 +35,7 @@
 .notification-row .notification-background .notification {
   /* The actual notification */
   border-radius: 16px;
-  margin: 11px;
+  margin: 6px;
   border: 3px solid @noti-border-color;
   /* padding: 8px; */
   transition: background 0.15s ease-in-out;
@@ -46,8 +46,8 @@
   background: @cc-bg;
   color: @text-color;
   border: 3px solid @noti-border-color;
-  border-radius: 16px;
-  margin: 10px;
+  border-radius: 8px;
+  margin: 5px;
 }
 .widget-dnd > switch slider {
   background: @color-solid1;

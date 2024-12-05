@@ -57,6 +57,7 @@ packages=(
     "gnome-text-editor"
     "gnome-weather"
     "google-chrome"
+    "grub-customizer"
     "hplip"
     "kitty"
     "kdeconnect"
@@ -65,6 +66,7 @@ packages=(
     "neovim"
     "nodejs-lts-iron"
     "npm"
+    "obsidian"
     "onlyoffice-bin"
     "pamac-all"
     "resources"
@@ -310,6 +312,50 @@ function configure_docker() {
     fi
 }
 
+# Install papirus-folders
+function install_papirus_folders() {
+    print_separator "Installation of papirus-folders"
+    if confirm "Do you want to install papirus-folders?"; then
+        wget -qO- https://git.io/papirus-folders-install | env PREFIX=$HOME/.local sh
+    fi
+}
+
+# Install/config Virtmanager with KVM/QEMU
+function virtmanager() {
+    print_separator "Installation of Virtmanager KVM/QEMU"
+    if confirm "Do you want to install Virtmanager with KVM/QEMU?"; then
+        # Install necessary packages for Virtmanager, KVM/QEMU, and related tools
+        sudo pacman -S virt-manager virt-viewer qemu vde2 ebtables iptables-nft nftables dnsmasq bridge-utils ovmf swtpm &&
+
+        # Add logging configuration for libvirt to log detailed information to a file
+        sudo echo 'log_filters="3:qemu 1:libvirt"' >> /etc/libvirt/libvirtd.conf
+        sudo echo 'log_outputs="2:file:/var/log/libvirt/libvirtd.log"' >> /etc/libvirt/libvirtd.conf
+
+        # Add the current user to the kvm and libvirt groups to allow virtualization management
+        sudo usermod -a -G kvm,libvirt $(whoami)
+
+        # Enable services
+        sudo systemctl enable libvirtd
+        sudo systemctl start libvirtd
+
+        # Manual editing of qemu.conf
+        echo_warning "Manual steps required:"
+        echo_warning "Open sudo vim /etc/libvirt/qemu.conf"
+        echo_warning "Uncomment and add your user name to user and group."
+        echo_warning 'user = "your username"'
+        echo_warning 'group = "your username"'
+        read -p "Press any key to open /etc/libvirt/qemu.conf: " c
+        sudo vim /etc/libvirt/qemu.conf
+
+        # Restart the libvirtd service to apply the changes made in qemu.conf
+        sudo systemctl restart libvirtd
+
+        # Configure the default virtual network to start automatically on boot
+        sudo virsh net-autostart default
+
+    fi
+}
+
 # Savedesktop
 function savedesktop_config() {
     print_separator "Restoring with Savedesktop"
@@ -391,6 +437,7 @@ function main() {
     update_package_database
     uninstall_packages
     install_packages
+    install_papirus_folders
     configure_tlp
     savedesktop_config
     install_megasync
@@ -398,6 +445,7 @@ function main() {
     configure_printer
     configure_git
     configure_bluetooth
+    virtmanager
     configure_docker
     hypr_config
     restart

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Définir le dossier de destination
-screenshot_dir="$HOME/Images/Screenshots"
+screenshot_dir="$HOME/Pictures/Screenshots"
 
 # Créer le dossier s'il n'existe pas
 mkdir -p "$screenshot_dir"

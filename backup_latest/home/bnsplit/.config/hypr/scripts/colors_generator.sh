@@ -8,7 +8,7 @@ cp "$1" $HOME/.zen/cy6bohdq.Default\ \(alpha\)/storage/default/moz-extension+++b
 
 ### Apply color scheme using 'wal'
 # Generate a color scheme based on the wallpaper
-wal -i "$1"
+wal -i "$1" &&
 
 ### Generate color configuration for Hyprland
 # Clear existing color configuration for Hyprland

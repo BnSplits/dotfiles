@@ -19,6 +19,15 @@ echo "swaync relancé."
 waybar &
 echo "waybar relancé."
 
+### Apply Papirus Folders Colors 
+PAPIRUS_COL=$(python3 $HOME/.config/hypr/scripts/colors_name.py) &&
+papirus-folders -C $PAPIRUS_COL --theme Papirus-Dark
+# papirus-folders -u
+# SOURCE_DIR="$HOME/.icons/papirus-icon-themes/papirus-icon-theme-$PAPIRUS_COL-folders"
+# echo $SOURCE_DIR
+# cp -r "$HOME/Music/papirus-icon-theme-$(python3 $HOME/.config/hypr/scripts/colors_name.py)-folders/Papirus/" "$HOME/.icons/"
+# cp -r "$HOME/Music/papirus-icon-theme-$(python3 $HOME/.config/hypr/scripts/colors_name.py)-folders/Papirus-Dark/" "$HOME/.icons/"
+
 # Flouter l'image de fond (si elle n'est pas un gif) et attendre que la tâche soit terminée
 if [ -f ~/.cache/wallpaper ]; then
     # Récupère le type MIME du fichier

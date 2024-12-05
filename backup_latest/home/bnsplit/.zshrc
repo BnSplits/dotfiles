@@ -56,6 +56,16 @@ alias yo='yay -Rns $(yay -Qdtq)'
 alias ysyu='yay -Syu'
 alias rmdb='sudo rm /var/lib/pacman/db.lck'
 alias ddd="sudo dd bs=4M if='$1' of=$2 conv=fsync oflag=direct status=progress"
+AnimeDive() {
+  case "$1" in
+    --node)
+      node ~/dev/AnimeDive/src/main.js
+      ;;
+    *)
+      source ~/dev/AnimeDive/launch-docker.sh
+      ;;
+  esac
+}
 
 # Shell integration
 eval "$(fzf --zsh)"
