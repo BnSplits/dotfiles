@@ -313,10 +313,11 @@ function configure_docker() {
 }
 
 # Install papirus-folders
-function install_papirus_folders() {
-    print_separator "Installation of papirus-folders"
-    if confirm "Do you want to install papirus-folders?"; then
-        wget -qO- https://git.io/papirus-folders-install | env PREFIX=$HOME/.local sh
+function config_papirus() {
+    print_separator "Configuration of papirus icon theme"
+    if confirm "Do you want to configure papirus icon theme?"; then
+        wget -qO- https://git.io/papirus-icon-theme-install | env DESTDIR="$HOME/.icons" sh &&
+        wget -qO- https://git.io/papirus-folders-install | env PREFIX=$HOME/.local sh &&
     fi
 }
 
