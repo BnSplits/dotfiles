@@ -2,7 +2,7 @@ import json
 
 # Define Papirus colors and their approximate hex codes
 papirus_colors = {
-    "adwaita": "#606060",
+    # "adwaita": "#606060",
     "black": "#000000",
     "blue": "#2196f3",
     "bluegrey": "#607d8b",
@@ -26,7 +26,7 @@ papirus_colors = {
     "violet": "#9c27b0",
     "white": "#ffffff",
     "yellow": "#ffeb3b",
-    "yaru": "#d32f2f",
+    # "yaru": "#d32f2f",
 }
 
 # Load the primary color from Pywal's JSON file

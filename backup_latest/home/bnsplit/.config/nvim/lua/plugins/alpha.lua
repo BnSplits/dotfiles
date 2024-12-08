@@ -138,7 +138,8 @@ return {
               -- .. " plugins in "
               -- .. ms
               -- .. "ms"
-              " 🍌 Do you likes bananas ? 🍌 "
+              -- " 🍌-------------------------🍌 "
+              "🍌"
           pcall(vim.cmd.AlphaRedraw)
         end,
       })

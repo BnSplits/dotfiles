@@ -2,7 +2,7 @@
 
 # Récupère la date du fichier le plus ancien (supposé être la date d'installation du système)
 # Utilise le format de date: année-mois-jour
-install_date=$(ls -lct --time-style=long-iso / | tail -1 | awk '{print $6, $7}')
+install_date=$(ls -lct --time-style=long-iso /home/ | tail -1 | awk '{print $6, $7}')
 
 # Convertit la date d'installation en secondes depuis Epoch
 install_seconds=$(date -d "$install_date" +%s)

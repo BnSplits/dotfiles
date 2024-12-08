@@ -25,4 +25,4 @@ used_ram=$(free -b | awk '/Mem:/ {print $3}')
 used_ram_gib=$(awk "BEGIN {printf \"%.2f\", $used_ram / (1024^3)}")
 
 # Afficher les informations formatées
-echo "$cpu_usage%   / $cpu_temp°C   / $used_ram_gib Gib  "
+echo "$cpu_usage%   / $cpu_temp°C   / $used_ram_gib Gib  "

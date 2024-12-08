@@ -25,13 +25,12 @@ function print_separator() {
 
 # List of packages to uninstall
 uninstall=(
-    "power-profiles-daemon"
     "emacs"
     "gnome-console"
 )
 
 # List of packages to install
-packages=(
+gnome_packages=(
     "amd-ucode"
     "appimagelauncher"
     "bat"
@@ -42,7 +41,6 @@ packages=(
     "cups"
     "docker"
     "docker-buildx"
-    "dolphin"
     "downgrade"
     "evince"
     "expect"
@@ -74,8 +72,6 @@ packages=(
     "spotify-launcher"
     "sshfs"
     "starship"
-    "tlp"
-    "tlpui"
     "tty-clock"
     "ttf-fira-code"
     "ttf-font-awesome"
@@ -85,6 +81,7 @@ packages=(
     "vdhcoapp"
     "vim"
     "visual-studio-code-bin"
+    "wtype"
     "wget"
     "wl-clipboard"
     "xclip"
@@ -93,6 +90,65 @@ packages=(
     "zoxide"
     "zsh"
 )
+
+kde_packages=(
+    "amd-ucode"
+    "appimagelauncher"
+    "bat"
+    "bitwarden"
+    "btop"
+    "cava"
+    "cups"
+    "docker"
+    "docker-buildx"
+    "dolphin"
+    "downgrade"
+    "expect"
+    "fastfetch"
+    "flatpak"
+    "fzf"
+    "gapless"
+    "git"
+    "google-chrome"
+    "grub-customizer"
+    "hplip"
+    "kitty"
+    "kdeconnect"
+    "kde-material-you-colors"
+    "konsave"
+    "kwin-effect-rounded-corners-git"
+    "kwin-scripts-krohnkite-git"
+    "libreoffice-still-fr"
+    "neovim"
+    "nodejs-lts-iron"
+    "npm"
+    "obsidian"
+    "onlyoffice-bin"
+    "pamac-all"
+    "resources"
+    "simple-scan"
+    "spotify-launcher"
+    "sshfs"
+    "starship"
+    "tty-clock"
+    "ttf-fira-code"
+    "ttf-font-awesome"
+    "ttf-jetbrains-mono"
+    "ttf-nerd-fonts-symbols"
+    "vlc"
+    "vdhcoapp"
+    "vim"
+    "visual-studio-code-bin"
+    "wtype"
+    "wget"
+    "wl-clipboard"
+    "xclip"
+    "yazi"
+    "zen-browser-avx2-bin"
+    "zoxide"
+    "zsh"
+)
+
 
 # Stop the script on error
 set -e
@@ -163,11 +219,34 @@ function uninstall_packages() {
     fi
 }
 
-# Install packages with cleaner output
-function install_packages() {
-    print_separator "Installing packages"
-    if confirm "Do you want to install the listed packages?"; then
-        for pkg in "${packages[@]}"; do
+# Install GNOME packages with cleaner output
+function install_gnome_packages() {
+    print_separator "Installing GNOME ppackages"
+    if confirm "Do you want to install the listed packages for GNOME?"; then
+        for pkg in "${gnome_packages[@]}"; do
+            echo_arrow "Checking $pkg..."
+
+            if pacman -Q "$pkg" &>/dev/null; then
+                echo_success "$pkg is already installed"
+            else
+                echo_arrow "Installing $pkg..."
+
+                # Install the package and redirect output to /dev/null
+                if yay -S --noconfirm --quiet "$pkg" >/dev/null 2>&1; then
+                    echo_success "$pkg installed"
+                else
+                    echo_error "$pkg not installed"
+                fi
+            fi
+        done
+    fi
+}
+
+# Install KDE packages with cleaner output
+function install_kde_packages() {
+    print_separator "Installing KDE packages"
+    if confirm "Do you want to install the listed packages for KDE?"; then
+        for pkg in "${kde_packages[@]}"; do
             echo_arrow "Checking $pkg..."
 
             if pacman -Q "$pkg" &>/dev/null; then
@@ -291,24 +370,16 @@ function configure_bluetooth() {
     fi
 }
 
-# TLP Configuration
-function configure_tlp() {
-    print_separator "Configuring TLP"
-    if confirm "Do you want to configure TLP?"; then
-        sudo systemctl enable --now tlp
-    fi
-}
-
 # Docker Configuration
 function configure_docker() {
     print_separator "Configuring Docker"
     if confirm "Do you want to configure Docker?"; then
         echo_arrow "Enabling Docker service..."
         sudo systemctl enable --now docker &&
-            echo_success "Docker service enabled and started" &&
-            echo_arrow "adding user to docker group" &&
-            sudo usermod -ag docker $user &&
-            echo_success "user added"
+        echo_success "Docker service enabled and started" &&
+        echo_arrow "adding user to docker group" &&
+        sudo usermod -ag docker $user &&
+        echo_success "user added"
     fi
 }
 
@@ -316,8 +387,8 @@ function configure_docker() {
 function config_papirus() {
     print_separator "Configuration of papirus icon theme"
     if confirm "Do you want to configure papirus icon theme?"; then
-        wget -qO- https://git.io/papirus-icon-theme-install | env DESTDIR="$HOME/.icons" sh &&
-        wget -qO- https://git.io/papirus-folders-install | env PREFIX=$HOME/.local sh &&
+        wget -qO- https://git.io/papirus-icon-theme-install | env DESTDIR="$HOME/.icons" sh
+        wget -qO- https://git.io/papirus-folders-install | env PREFIX=$HOME/.local sh
     fi
 }
 
@@ -325,35 +396,7 @@ function config_papirus() {
 function virtmanager() {
     print_separator "Installation of Virtmanager KVM/QEMU"
     if confirm "Do you want to install Virtmanager with KVM/QEMU?"; then
-        # Install necessary packages for Virtmanager, KVM/QEMU, and related tools
-        sudo pacman -S virt-manager virt-viewer qemu vde2 ebtables iptables-nft nftables dnsmasq bridge-utils ovmf swtpm &&
-
-        # Add logging configuration for libvirt to log detailed information to a file
-        sudo echo 'log_filters="3:qemu 1:libvirt"' >> /etc/libvirt/libvirtd.conf
-        sudo echo 'log_outputs="2:file:/var/log/libvirt/libvirtd.log"' >> /etc/libvirt/libvirtd.conf
-
-        # Add the current user to the kvm and libvirt groups to allow virtualization management
-        sudo usermod -a -G kvm,libvirt $(whoami)
-
-        # Enable services
-        sudo systemctl enable libvirtd
-        sudo systemctl start libvirtd
-
-        # Manual editing of qemu.conf
-        echo_warning "Manual steps required:"
-        echo_warning "Open sudo vim /etc/libvirt/qemu.conf"
-        echo_warning "Uncomment and add your user name to user and group."
-        echo_warning 'user = "your username"'
-        echo_warning 'group = "your username"'
-        read -p "Press any key to open /etc/libvirt/qemu.conf: " c
-        sudo vim /etc/libvirt/qemu.conf
-
-        # Restart the libvirtd service to apply the changes made in qemu.conf
-        sudo systemctl restart libvirtd
-
-        # Configure the default virtual network to start automatically on boot
-        sudo virsh net-autostart default
-
+        curl -s https://gitlab.com/stephan-raabe/archinstall/-/raw/main/7-kvm.sh | bash -x
     fi
 }
 
@@ -437,9 +480,9 @@ function main() {
     config_clock
     update_package_database
     uninstall_packages
-    install_packages
-    install_papirus_folders
-    configure_tlp
+    install_kde_packages
+    install_gnome_packages
+    config_papirus
     savedesktop_config
     install_megasync
     restore_backup

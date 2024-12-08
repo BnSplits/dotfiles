@@ -37,4 +37,4 @@ check_updates() {
 
 # Show the number of updates
 check_updates
-yay -Qu | wc -l
+echo $(yay -Qu | wc -l) updates /
