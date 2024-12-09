@@ -383,6 +383,15 @@ function savedesktop_config() {
     fi
 }
 
+# konsave
+function konsave_config() {
+    print_separator "Restoring with konsave"
+    if confirm "Do you want to restore KDE with Konsave?"; then
+       konsave -i ~/dev/dotfiles/KDE_Conf.knsv &&
+    fi
+}
+
+
 # Hyprland Configuration
 function hypr_config() {
     print_separator "Configuring Hyprland"
