@@ -76,7 +76,7 @@
         "format-full": " {capacity}%",
         "format-plugged": " {capacity}% ",
         "tooltip-format": "{time}   / {health}% ",
-        "on-click": "source ~/.config/hypr/scripts/toggle_battery_save.sh",
+        "on-click": "source ~/scripts/toggle_battery_save.sh",
         "on-click-right": "kitty btop",
     },
     "pulseaudio": {
@@ -129,7 +129,7 @@
     "custom/sys_infos": {
         "interval": 2,
         "format": "{}",
-        "exec": "~/.config/hypr/scripts/sys_infos.sh",
+        "exec": "~/scripts/sys_infos.sh",
         "tooltip": true,
         "tooltip-format": "{}",
         "on-click": "kitty --class float-btop -e btop"
@@ -142,12 +142,12 @@
     },
     "custom/update": {
         "interval": 60, 
-        "exec": "~/.config/hypr/scripts/check_updates.sh",
+        "exec": "~/scripts/check_updates.sh",
         "tooltip": true,
         "tooltip-format": "{} updates",
         "format": "  {}",
-        "on-click": "kitty --class update-applet-other-w -e ~/.config/hypr/scripts/updates.sh",
-        "on-click-right": "kitty --class update-applet-current-w -e ~/.config/hypr/scripts/updates.sh"
+        "on-click": "kitty --class update-applet-other-w -e ~/scripts/updates.sh",
+        "on-click-right": "kitty --class update-applet-current-w -e ~/scripts/updates.sh"
     },
     "custom/clipboard": {
         "on-click": "kitty --class clipse -e clipse",
@@ -156,8 +156,8 @@
         "tooltip-format": "clipboard",
     },
     "custom/screenshot":{
-        "on-click": "source ~/.config/hypr/scripts/screenshot.sh part",
-        "on-click-right": "source ~/.config/hypr/scripts/screenshot.sh full",
+        "on-click": "source ~/scripts/screenshot.sh part",
+        "on-click-right": "source ~/scripts/screenshot.sh full",
         "format": " ",
         "tooltip": true,
         "tooltip-format": "screenshot",
@@ -185,6 +185,6 @@
     "custom/idle_inhibitor": {
       "interval": 1,
       "exec": "if pgrep -x 'hypridle' > /dev/null; then echo ' ' ; else echo  ' '; fi",
-      "on-click": "source ~/.config/hypr/scripts/toggle_idle.sh"  
+      "on-click": "source ~/scripts/toggle_idle.sh"  
     }
 }

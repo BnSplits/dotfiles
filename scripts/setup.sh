@@ -29,46 +29,40 @@ uninstall=(
     "gnome-console"
 )
 
-# List of packages to install
-gnome_packages=(
+# List of default packages to install
+default_packages=(
     "amd-ucode"
     "appimagelauncher"
+    "aria2"
     "bat"
     "bitwarden"
     "btop"
     "cava"
-    "cheese"
     "cups"
     "docker"
     "docker-buildx"
     "downgrade"
-    "evince"
     "expect"
-    "extension-manager"
     "fastfetch"
     "flatpak"
     "fzf"
     "gapless"
     "git"
-    "gnome-calendar"
-    "gnome-terminal"
-    "gnome-text-editor"
-    "gnome-weather"
     "google-chrome"
     "grub-customizer"
     "hplip"
     "kitty"
     "kdeconnect"
     "libreoffice-still-fr"
-    "loupe"
     "neovim"
     "nodejs-lts-iron"
     "npm"
     "obsidian"
     "onlyoffice-bin"
-    "pamac-all"
+    "pamac-aur"
     "resources"
     "simple-scan"
+    "speedtest-cli"
     "spotify-launcher"
     "sshfs"
     "starship"
@@ -91,62 +85,27 @@ gnome_packages=(
     "zsh"
 )
 
+# List of packages to install
+gnome_packages=(
+    "cheese"
+    "evince"
+    "extension-manager"
+    "gnome-calendar"
+    "gnome-terminal"
+    "gnome-text-editor"
+    "gnome-weather"
+    "loupe"
+    "resources"
+    "simple-scan"
+)
+
 kde_packages=(
-    "amd-ucode"
-    "appimagelauncher"
-    "bat"
-    "bitwarden"
-    "btop"
-    "cava"
-    "cups"
-    "docker"
-    "docker-buildx"
     "dolphin"
-    "downgrade"
-    "expect"
-    "fastfetch"
-    "flatpak"
-    "fzf"
-    "gapless"
-    "git"
-    "google-chrome"
-    "grub-customizer"
-    "hplip"
-    "kitty"
-    "kdeconnect"
     "kde-material-you-colors"
     "konsave"
     "kwin-effect-rounded-corners-git"
     "kwin-scripts-krohnkite-git"
-    "libreoffice-still-fr"
-    "neovim"
-    "nodejs-lts-iron"
-    "npm"
-    "obsidian"
-    "onlyoffice-bin"
-    "pamac-all"
-    "resources"
-    "simple-scan"
-    "spotify-launcher"
-    "sshfs"
-    "starship"
-    "tty-clock"
-    "ttf-fira-code"
-    "ttf-font-awesome"
-    "ttf-jetbrains-mono"
-    "ttf-nerd-fonts-symbols"
-    "vlc"
-    "vdhcoapp"
-    "vim"
-    "visual-studio-code-bin"
-    "wtype"
-    "wget"
-    "wl-clipboard"
-    "xclip"
-    "yazi"
-    "zen-browser-avx2-bin"
-    "zoxide"
-    "zsh"
+    "partionmanager"
 )
 
 
@@ -202,12 +161,12 @@ function uninstall_packages() {
     if confirm "Do you want to uninstall the listed packages?"; then
         for pkg in "${uninstall[@]}"; do
             echo_arrow "Checking $pkg..."
-
+            
             if ! pacman -Q "$pkg" &>/dev/null; then
                 echo_success "$pkg is not installed"
             else
                 echo_arrow "Uninstalling $pkg..."
-
+                
                 # Uninstall the package and redirect output to /dev/null
                 if yay -Rns --noconfirm "$pkg" >/dev/null 2>&1; then
                     echo_success "$pkg uninstalled"
@@ -219,18 +178,18 @@ function uninstall_packages() {
     fi
 }
 
-# Install GNOME packages with cleaner output
-function install_gnome_packages() {
-    print_separator "Installing GNOME ppackages"
-    if confirm "Do you want to install the listed packages for GNOME?"; then
-        for pkg in "${gnome_packages[@]}"; do
+# Install default packages
+function install_default_packages() {
+    print_separator "Installing default packages"
+    if confirm "Do you want to install default packages?"; then
+        for pkg in "${default_packages[@]}"; do
             echo_arrow "Checking $pkg..."
-
+            
             if pacman -Q "$pkg" &>/dev/null; then
                 echo_success "$pkg is already installed"
             else
                 echo_arrow "Installing $pkg..."
-
+                
                 # Install the package and redirect output to /dev/null
                 if yay -S --noconfirm --quiet "$pkg" >/dev/null 2>&1; then
                     echo_success "$pkg installed"
@@ -242,18 +201,33 @@ function install_gnome_packages() {
     fi
 }
 
-# Install KDE packages with cleaner output
-function install_kde_packages() {
-    print_separator "Installing KDE packages"
-    if confirm "Do you want to install the listed packages for KDE?"; then
-        for pkg in "${kde_packages[@]}"; do
+# Install additional packages with cleaner output
+function install_additional_packages() {
+    print_separator "Installing additional packages"
+    if confirm "Do you want to install the listed packages for GNOME / KDE?"; then
+        
+        read -p "$(echo -e ${YELLOW}"Choose between GNOME(default)[G] / KDE[K] : "${NC})" DE
+        
+        case $DE in
+            G | g)
+                de_packages=( ${gnome_packages[@]} )
+            ;;
+            K | k)
+                de_packages=( ${kde_packages[@]} )
+            ;;
+            *)
+                de_packages=( ${gnome_packages[@]} )
+            ;;
+        esac
+        
+        for pkg in "${de_packages[@]}"; do
             echo_arrow "Checking $pkg..."
-
+            
             if pacman -Q "$pkg" &>/dev/null; then
                 echo_success "$pkg is already installed"
             else
                 echo_arrow "Installing $pkg..."
-
+                
                 # Install the package and redirect output to /dev/null
                 if yay -S --noconfirm --quiet "$pkg" >/dev/null 2>&1; then
                     echo_success "$pkg installed"
@@ -272,7 +246,7 @@ function install_megasync() {
         local megasync_pkg="megasync-x86_64.pkg.tar.zst"
         local megasync_url="https://mega.nz/linux/repo/Arch_Extra/x86_64/$megasync_pkg"
         cd ~/Downloads
-
+        
         if [ ! -f "$megasync_pkg" ]; then
             echo_arrow "Downloading Megasync..."
             wget "$megasync_url" || {
@@ -280,7 +254,7 @@ function install_megasync() {
                 exit 1
             }
         fi
-
+        
         echo_arrow "Installing Megasync..."
         sudo pacman -U "$megasync_pkg" --noconfirm || echo_error "Failed to install Megasync"
         rm -f "$megasync_pkg"
@@ -301,7 +275,7 @@ function replace_config() {
 # Backup archive restoration
 function restore_backup() {
     local ARCHIVE_BACKUP="../backup_latest/"
-
+    
     if [ -d "$ARCHIVE_BACKUP" ]; then
         print_separator "Restoring backup"
         if confirm "Do you want to restore the backup?"; then
@@ -309,24 +283,24 @@ function restore_backup() {
             for file in "$ARCHIVE_BACKUP/home/bnsplit/."*; do
                 file_name=$(basename "$file")
                 dest_file="$HOME/$file_name"
-
+                
                 # Check if the file is a broken symbolic link
                 if [ -L "$dest_file" ] && [ ! -e "$dest_file" ]; then
                     echo_warning "$dest_file is a broken symlink, deleting..."
                     rm "$dest_file"
                 fi
-
+                
                 if [ -f "$file" ] || [ -d "$file" ]; then
                     echo_arrow "Copying $file_name to ~/"
                     cp -r "$file" "$HOME/"
                     echo_success "$file_name copied to ~/"
                 fi
             done
-
+            
             local makepkgconf_source="$ARCHIVE_BACKUP/etc/makepkg.conf"
             local makepkgconf_dest="/etc/makepkg.conf"
             sudo cp "$makepkgconf_source" "$makepkgconf_dest" && echo_success "makepkg.conf replaced in /etc/"
-
+            
             copy_desktop_file() {
                 local source="$1"
                 local dest="$2"
@@ -337,11 +311,11 @@ function restore_backup() {
                 "obsidian.desktop"
                 "zen-alpha.desktop"
             )
-
-for file in "${desktop_files[@]}"; do
-    copy_desktop_file "$ARCHIVE_BACKUP/usr/share/applications/$file" "/usr/share/applications/$file"
-done
-
+            
+            for file in "${desktop_files[@]}"; do
+                copy_desktop_file "$ARCHIVE_BACKUP/usr/share/applications/$file" "/usr/share/applications/$file"
+            done
+            
             echo_success "Restoration complete"
         fi
     else
@@ -405,7 +379,7 @@ function savedesktop_config() {
     print_separator "Restoring with Savedesktop"
     if confirm "Do you want to restore GNOME with Savedesktop?"; then
         wget -qO /tmp/savedesktop-native-installer.py https://raw.githubusercontent.com/vikdevelop/SaveDesktop/main/native/native_installer.py && python3 /tmp/savedesktop-native-installer.py --install &&
-            ~/.local/bin/savedesktop --import-config ~/dev/dotfiles/Gnome_Conf.sd.tar.gz
+        ~/.local/bin/savedesktop --import-config ~/dev/dotfiles/Gnome_Conf.sd.tar.gz
     fi
 }
 
@@ -442,15 +416,15 @@ function hypr_config() {
             "xdg-desktop-portal-gtk"
             "xdg-desktop-portal-hyprland"
         )
-
+        
         for pkg in "${hypr_packages[@]}"; do
             echo_arrow "Checking $pkg..."
-
+            
             if pacman -Q "$pkg" &>/dev/null; then
                 echo_success "$pkg is already installed"
             else
                 echo_arrow "Installing $pkg..."
-
+                
                 if yay -S --noconfirm --quiet "$pkg" >/dev/null 2>&1; then
                     echo_success "$pkg installed"
                 else
@@ -458,7 +432,7 @@ function hypr_config() {
                 fi
             fi
         done
-
+        
         # Enable and start NetworkManager
         sudo systemctl enable NetworkManager
         sudo systemctl start NetworkManager
@@ -480,8 +454,8 @@ function main() {
     config_clock
     update_package_database
     uninstall_packages
-    install_kde_packages
-    install_gnome_packages
+    install_default_packages
+    install_additional_packages
     config_papirus
     savedesktop_config
     install_megasync

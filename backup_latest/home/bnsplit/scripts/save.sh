@@ -27,7 +27,6 @@ mkdir -p "$BACKUP_DIR/home" "$BACKUP_DIR/etc" || { echo_error "Unable to create 
 
 # Folders and files to backup
 items_to_backup=(
-    "$HOME/.config/ags/"
     "$HOME/.config/fastfetch/"
     "$HOME/.config/gtk-3.0/"
     "$HOME/.config/gtk-4.0/"
@@ -46,6 +45,7 @@ items_to_backup=(
     "$HOME/.cache/wal/"
     "$HOME/.cache/wallpaper"
     "$HOME/.cache/wallpaper-blur"
+    "$HOME/scripts/"
     "$HOME/.fonts"
     "$HOME/.zen"
     "$HOME/.bashrc"

@@ -4,20 +4,14 @@ return {
   dependencies = 'nvim-tree/nvim-web-devicons',
   config = function()
     vim.opt.termguicolors = true
-    require("bufferline").setup {}
+    require("bufferline").setup{}
 
     local keymap = vim.keymap
 
-    keymap.set("n", "bn", "<cmd>BufferLineCycleNext<CR>", { desc = "Go to next buffer" })
-    keymap.set("n", "bp", "<cmd>BufferLineCyclePrev<CR>", { desc = "Go to previous buffer" })
-    keymap.set("n", "bc", "<cmd>BufferLinePickClose<CR>", { desc = "Close selected buffer" })
-    keymap.set("n", "b1", "<cmd>BufferLineGoToBuffer 1<CR>", { desc = "Go to first buffer" })
-    keymap.set("n", "b0", "<cmd>BufferLineGoToBuffer -1<CR>", { desc = "Go to last buffer" })
-
-    -- keymap.set("n", "<leader>bn", "<cmd>BufferLineCycleNext<CR>", { desc = "Go to next buffer" })
-    -- keymap.set("n", "<leader>bp", "<cmd>BufferLineCyclePrev<CR>", { desc = "Go to previous buffer" })
-    -- keymap.set("n", "<leader>bc", "<cmd>BufferLinePickClose<CR>", { desc = "Close selected buffer" })
-    -- keymap.set("n", "<leader>b1", "<cmd>BufferLineGoToBuffer 1<CR>", { desc = "Go to first buffer" })
-    -- keymap.set("n", "<leader>b0", "<cmd>BufferLineGoToBuffer -1<CR>", { desc = "Go to last buffer" })
+    keymap.set("n","<leader>bn","<cmd>BufferLineCycleNext<CR>", {desc = "Go to next buffer"})
+    keymap.set("n","<leader>bp","<cmd>BufferLineCyclePrev<CR>", {desc = "Go to previous buffer"})
+    keymap.set("n","<leader>bc","<cmd>BufferLinePickClose<CR>", {desc = "Close selected buffer"})
+    keymap.set("n","<leader>b1","<cmd>BufferLineGoToBuffer 1<CR>", {desc = "Go to first buffer"})
+    keymap.set("n","<leader>b0","<cmd>BufferLineGoToBuffer -1<CR>", {desc = "Go to last buffer"})
   end,
 }
