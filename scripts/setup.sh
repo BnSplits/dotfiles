@@ -204,6 +204,58 @@ function install_default_packages() {
     fi
 }
 
+# Optional KDE config function
+function kde_config(){
+    echo_arrow "Desktop chosen : KDE"
+    de_packages=( ${kde_packages[@]} )
+    # konsave
+    function konsave_config() {
+        print_separator "Restoring with konsave"
+        if confirm "Do you want to restore KDE with Konsave?"; then
+            konsave -i ~/dev/dotfiles/KDE_Conf.knsv
+        fi
+    }
+    konsave_config
+    print_separator "Installing additional packages for KDE"
+    
+    function config_gdrive(){
+        print_separator "Config GDrive"
+        if confirm "Do you want to configure GDrive?"; then
+            cat ./google.provider | sudo tee /usr/share/accounts/providers/kde/google.provider > /dev/null
+            echo_warning "Make sure to add your Google account into KDE settings"
+        fi
+    }
+    config_gdrive
+}
+
+# Optional GNOME config function
+function gnome_config(){
+    echo_arrow "Desktop chosen : GNOME"
+    de_packages=( ${gnome_packages[@]} )
+    # Install papirus-folders
+    function config_papirus() {
+        print_separator "Configuration of papirus icon theme"
+        if confirm "Do you want to configure papirus icon theme?"; then
+            wget -qO- https://git.io/papirus-icon-theme-install | env DESTDIR="$HOME/.icons" sh
+            wget -qO- https://git.io/papirus-folders-install | env PREFIX=$HOME/.local sh
+        fi
+    }
+    config_papirus
+    
+    # Savedesktop
+    function savedesktop_config() {
+        print_separator "Restoring with Savedesktop"
+        if confirm "Do you want to restore GNOME with Savedesktop?"; then
+            wget -qO /tmp/savedesktop-native-installer.py https://raw.githubusercontent.com/vikdevelop/SaveDesktop/main/native/native_installer.py &&
+            python3 /tmp/savedesktop-native-installer.py --install &&
+            ~/.local/bin/savedesktop --import-config ~/dev/dotfiles/Gnome_Conf.sd.tar.gz
+        fi
+    }
+    savedesktop_config
+    print_separator "Installing additional packages for GNOME"
+}
+
+
 # Install additional packages with cleaner output
 function install_additional_packages() {
     print_separator "Installing additional packages"
@@ -214,45 +266,10 @@ function install_additional_packages() {
         # Functions for each desktop
         case $DE in
             G | g)
-                echo_arrow "Desktop chosen : GNOME"
-                de_packages=( ${gnome_packages[@]} )
-                # Install papirus-folders
-                function config_papirus() {
-                    print_separator "Configuration of papirus icon theme"
-                    if confirm "Do you want to configure papirus icon theme?"; then
-                        wget -qO- https://git.io/papirus-icon-theme-install | env DESTDIR="$HOME/.icons" sh
-                        wget -qO- https://git.io/papirus-folders-install | env PREFIX=$HOME/.local sh
-                    fi
-                }
-                config_papirus
-                
-                # Savedesktop
-                function savedesktop_config() {
-                    print_separator "Restoring with Savedesktop"
-                    if confirm "Do you want to restore GNOME with Savedesktop?"; then
-                        wget -qO /tmp/savedesktop-native-installer.py https://raw.githubusercontent.com/vikdevelop/SaveDesktop/main/native/native_installer.py &&
-                        python3 /tmp/savedesktop-native-installer.py --install &&
-                        ~/.local/bin/savedesktop --import-config ~/dev/dotfiles/Gnome_Conf.sd.tar.gz
-                    fi
-                }
-                savedesktop_config
-                print_separator "Installing additional packages for GNOME"
-                
-                
+                gnome_config
             ;;
             K | k)
-                echo_arrow "Desktop chosen : KDE"
-                de_packages=( ${kde_packages[@]} )
-                # konsave
-                function konsave_config() {
-                    print_separator "Restoring with konsave"
-                    if confirm "Do you want to restore KDE with Konsave?"; then
-                        konsave -i ~/dev/dotfiles/KDE_Conf.knsv
-                    fi
-                }
-                konsave_config
-                print_separator "Installing additional packages for KDE"
-                
+              kde_config
             ;;
             *)
                 echo_warning "Invalide choice ! No valid config selected !"

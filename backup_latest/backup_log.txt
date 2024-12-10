@@ -2398,3 +2398,33 @@ Saved the following items:
 Backup completed at Tue Dec 10 03:09:42 PM GMT 2024
 -------------------------------------------------------------------------------
 
+Backup started at Tue Dec 10 03:55:32 PM GMT 2024
+Saved the following items:
+- /home/bnsplit/.config/fastfetch/
+- /home/bnsplit/.config/gtk-3.0/
+- /home/bnsplit/.config/gtk-4.0/
+- /home/bnsplit/.config/qt6ct/
+- /home/bnsplit/.config/hypr/
+- /home/bnsplit/.config/kitty/
+- /home/bnsplit/.config/nvim/
+- /home/bnsplit/.config/rofi/
+- /home/bnsplit/.config/waybar/
+- /home/bnsplit/.config/swaync/
+- /home/bnsplit/.config/waypaper/
+- /home/bnsplit/.config/wlogout/
+- /home/bnsplit/.config/yay/
+- /home/bnsplit/.config/yazi/
+- /home/bnsplit/.config/starship.toml
+- /home/bnsplit/.cache/wal/
+- /home/bnsplit/.cache/wallpaper
+- /home/bnsplit/.cache/wallpaper-blur
+- /home/bnsplit/scripts/
+- /home/bnsplit/.fonts
+- /home/bnsplit/.zen
+- /home/bnsplit/.bashrc
+- /home/bnsplit/.zshrc
+- /home/bnsplit/.Xresources
+- /etc/makepkg.conf
+Backup completed at Tue Dec 10 03:55:55 PM GMT 2024
+-------------------------------------------------------------------------------
+
