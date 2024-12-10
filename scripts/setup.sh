@@ -38,6 +38,7 @@ default_packages=(
     "bitwarden"
     "btop"
     "cava"
+    "cmatrix"
     "cups"
     "docker"
     "docker-buildx"
