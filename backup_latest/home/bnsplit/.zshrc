@@ -26,7 +26,7 @@ bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 
 # History
-HISTSIZE=10000
+HISTSIZE=100000
 HISTFILE=~/.zsh_history
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
@@ -50,6 +50,7 @@ alias ls='ls --color'
 alias z='clear && zsh'
 alias n='nvim'
 alias c='clear'
+alias matrix='cmatrix'
 alias grep='grep --color=always'
 # alias vim='nvim'
 alias yo='yay -Rns $(yay -Qdtq)'

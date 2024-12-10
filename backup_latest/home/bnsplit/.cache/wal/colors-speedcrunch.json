@@ -1,15 +1,15 @@
 {
-    "cursor": "#f1dfdc",
-    "number": "#f9d5cf",
-    "parens": "#febbdb",
-    "result": "#8fcef9",
-    "comment": "#caaba6",
-    "matched": "#7bc6f8",
-    "function": "#e47263",
-    "operator": "#9db5b3",
-    "variable": "#6f9dff",
-    "scrollbar": "#9db5b3",
-    "separator": "#9db5b3",
-    "background": "#180f0e",
-    "editorbackground": "#180f0e"
+    "cursor": "#f1dfda",
+    "number": "#f9d6cc",
+    "parens": "#e5c090",
+    "result": "#edb28b",
+    "comment": "#caaca4",
+    "matched": "#eaa778",
+    "function": "#e78a73",
+    "operator": "#79c1a0",
+    "variable": "#9eae9b",
+    "scrollbar": "#79c1a0",
+    "separator": "#79c1a0",
+    "background": "#180f0d",
+    "editorbackground": "#180f0d"
 }

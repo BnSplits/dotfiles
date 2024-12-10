@@ -104,6 +104,8 @@ kde_packages=(
     "dolphin"
     "kde-material-you-colors"
     "konsave"
+    "kio"
+    "kio-gdrive"
     "kwin-effect-rounded-corners-git"
     "kwin-scripts-krohnkite-git"
     "partionmanager"
@@ -207,17 +209,53 @@ function install_additional_packages() {
     print_separator "Installing additional packages"
     if confirm "Do you want to install the listed packages for GNOME / KDE?"; then
         
-        read -p "$(echo -e ${YELLOW}"Choose between GNOME(default)[G] / KDE[K] : "${NC})" DE
+        read -p "$(echo -e ${YELLOW}"Choose between GNOME[G] / KDE[K] : "${NC})" DE
         
+        # Functions for each desktop
         case $DE in
             G | g)
+                echo_arrow "Desktop chosen : GNOME"
                 de_packages=( ${gnome_packages[@]} )
+                # Install papirus-folders
+                function config_papirus() {
+                    print_separator "Configuration of papirus icon theme"
+                    if confirm "Do you want to configure papirus icon theme?"; then
+                        wget -qO- https://git.io/papirus-icon-theme-install | env DESTDIR="$HOME/.icons" sh
+                        wget -qO- https://git.io/papirus-folders-install | env PREFIX=$HOME/.local sh
+                    fi
+                }
+                config_papirus
+                
+                # Savedesktop
+                function savedesktop_config() {
+                    print_separator "Restoring with Savedesktop"
+                    if confirm "Do you want to restore GNOME with Savedesktop?"; then
+                        wget -qO /tmp/savedesktop-native-installer.py https://raw.githubusercontent.com/vikdevelop/SaveDesktop/main/native/native_installer.py &&
+                        python3 /tmp/savedesktop-native-installer.py --install &&
+                        ~/.local/bin/savedesktop --import-config ~/dev/dotfiles/Gnome_Conf.sd.tar.gz
+                    fi
+                }
+                savedesktop_config
+                print_separator "Installing additional packages for GNOME"
+                
+                
             ;;
             K | k)
+                echo_arrow "Desktop chosen : KDE"
                 de_packages=( ${kde_packages[@]} )
+                # konsave
+                function konsave_config() {
+                    print_separator "Restoring with konsave"
+                    if confirm "Do you want to restore KDE with Konsave?"; then
+                        konsave -i ~/dev/dotfiles/KDE_Conf.knsv
+                    fi
+                }
+                konsave_config
+                print_separator "Installing additional packages for KDE"
+                
             ;;
             *)
-                de_packages=( ${gnome_packages[@]} )
+                echo_warning "Invalide choice ! No valid config selected !"
             ;;
         esac
         
@@ -358,14 +396,6 @@ function configure_docker() {
     fi
 }
 
-# Install papirus-folders
-function config_papirus() {
-    print_separator "Configuration of papirus icon theme"
-    if confirm "Do you want to configure papirus icon theme?"; then
-        wget -qO- https://git.io/papirus-icon-theme-install | env DESTDIR="$HOME/.icons" sh
-        wget -qO- https://git.io/papirus-folders-install | env PREFIX=$HOME/.local sh
-    fi
-}
 
 # Install/config Virtmanager with KVM/QEMU
 function virtmanager() {
@@ -374,24 +404,6 @@ function virtmanager() {
         curl -s https://gitlab.com/stephan-raabe/archinstall/-/raw/main/7-kvm.sh | bash -x
     fi
 }
-
-# Savedesktop
-function savedesktop_config() {
-    print_separator "Restoring with Savedesktop"
-    if confirm "Do you want to restore GNOME with Savedesktop?"; then
-        wget -qO /tmp/savedesktop-native-installer.py https://raw.githubusercontent.com/vikdevelop/SaveDesktop/main/native/native_installer.py && python3 /tmp/savedesktop-native-installer.py --install &&
-        ~/.local/bin/savedesktop --import-config ~/dev/dotfiles/Gnome_Conf.sd.tar.gz
-    fi
-}
-
-# konsave
-function konsave_config() {
-    print_separator "Restoring with konsave"
-    if confirm "Do you want to restore KDE with Konsave?"; then
-       konsave -i ~/dev/dotfiles/KDE_Conf.knsv &&
-    fi
-}
-
 
 # Hyprland Configuration
 function hypr_config() {
@@ -466,8 +478,6 @@ function main() {
     uninstall_packages
     install_default_packages
     install_additional_packages
-    config_papirus
-    savedesktop_config
     install_megasync
     restore_backup
     configure_printer
