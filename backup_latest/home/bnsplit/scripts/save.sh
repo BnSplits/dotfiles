@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# Clear the screen
 clear
 
 # Define colors
@@ -11,9 +13,9 @@ NC='\033[0m' # No Color
 
 # Function to display messages with arrows
 function echo_arrow() { echo -e "${BLUE}=> $1${NC}"; }
-function echo_success() { echo -e "${GREEN}✓ $1${NC}"; }
-function echo_warning() { echo -e "${YELLOW}⚠ $1${NC}"; }
-function echo_error() { echo -e "${RED}✗ $1${NC}\n"; }
+function echo_success() { echo -e "${GREEN}\u2713 $1${NC}"; }
+function echo_warning() { echo -e "${YELLOW}\u26A0 $1${NC}"; }
+function echo_error() { echo -e "${RED}\u2717 $1${NC}\n"; }
 function print_separator() {
     echo -e "\n${CYAN}##############################${NC}"
     echo -e "${CYAN}# $1${NC}"
@@ -22,8 +24,7 @@ function print_separator() {
 
 # Directory where backup files will be stored
 BACKUP_DIR="$HOME/dev/dotfiles/backup_latest"
-LOG_FILE="$BACKUP_DIR/backup_log.txt"
-mkdir -p "$BACKUP_DIR/home" "$BACKUP_DIR/etc" || { echo_error "Unable to create backup directories"; exit 1; }
+LOG_FILE="$HOME/dev/dotfiles/backup_log.txt"
 
 # Folders and files to backup
 items_to_backup=(
@@ -46,6 +47,8 @@ items_to_backup=(
     "$HOME/.cache/wallpaper"
     "$HOME/.cache/wallpaper-blur"
     "$HOME/scripts/"
+    # "/mnt/win/Users/USER/Documents/Obsidian/"
+    "$HOME/Obsidian/"
     "$HOME/.fonts"
     "$HOME/.zen"
     "$HOME/.bashrc"
@@ -54,10 +57,20 @@ items_to_backup=(
     "/etc/makepkg.conf"
 )
 
-print_separator "Backing up files and folders to $BACKUP_DIR"
+print_separator "Preparing Backup Process"
+
+# Ensure the backup directory exists and clear its contents
+if [ -d "$BACKUP_DIR" ]; then
+    echo_arrow "Clearing the backup directory..."
+    rm -rf "$BACKUP_DIR"/* || { echo_error "Failed to clear $BACKUP_DIR"; exit 1; }
+else
+    echo_arrow "Creating the backup directory..."
+    mkdir -p "$BACKUP_DIR/home" "$BACKUP_DIR/etc" || { echo_error "Failed to create $BACKUP_DIR"; exit 1; }
+fi
 
 # Log the backup start time
 echo "Backup started at $(date)" >> "$LOG_FILE"
+print_separator "Backing up files and folders to $BACKUP_DIR"
 
 # Copy files and folders to the backup directory
 saved_items=()

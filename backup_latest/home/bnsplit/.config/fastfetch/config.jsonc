@@ -33,7 +33,7 @@
             "type": "uptime"
         },
         {
-            "key": "│ {#35}󰅐 os age  {#keys}│",
+            "key": "│ {#35}󰅐 age     {#keys}│",
             "text": "~/.config/fastfetch/os_age.sh",
             "type": "command"
         },

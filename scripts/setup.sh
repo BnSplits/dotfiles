@@ -43,6 +43,7 @@ default_packages=(
     "docker"
     "docker-buildx"
     "downgrade"
+    "eos-update-notifier"
     "expect"
     "fastfetch"
     "flatpak"
@@ -101,7 +102,6 @@ gnome_packages=(
 )
 
 kde_packages=(
-    "dolphin"
     "kde-material-you-colors"
     "konsave"
     "kio"
@@ -266,10 +266,10 @@ function install_additional_packages() {
         # Functions for each desktop
         case $DE in
             G | g)
-                gnome_config
+    de_packages=( ${gnome_packages[@]} )
             ;;
             K | k)
-              kde_config
+    de_packages=( ${kde_packages[@]} )
             ;;
             *)
                 echo_warning "Invalide choice ! No valid config selected !"
@@ -292,6 +292,19 @@ function install_additional_packages() {
                 fi
             fi
         done
+
+
+        case $DE in
+            G | g)
+                gnome_config
+            ;;
+            K | k)
+              kde_config
+            ;;
+            *)
+                echo_warning "Invalide choice ! No valid config selected !"
+            ;;
+        esac
     fi
 }
 

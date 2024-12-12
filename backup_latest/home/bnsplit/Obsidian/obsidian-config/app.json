@@ -1,0 +1,10 @@
+{
+  "showInlineTitle": false,
+  "showRibbon": true,
+  "foldHeading": true,
+  "foldIndent": true,
+  "rightToLeft": false,
+  "alwaysUpdateLinks": true,
+  "vimMode": true,
+  "readableLineLength": false
+}
