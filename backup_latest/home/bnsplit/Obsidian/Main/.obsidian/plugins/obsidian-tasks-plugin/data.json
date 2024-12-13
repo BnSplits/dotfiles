@@ -1,7 +1,7 @@
 {
   "globalQuery": "",
-  "globalFilter": "",
-  "removeGlobalFilter": false,
+  "globalFilter": "#todo #DMs",
+  "removeGlobalFilter": true,
   "taskFormat": "tasksPluginEmoji",
   "setCreatedDate": false,
   "setDoneDate": true,
@@ -13,7 +13,7 @@
   "useFilenameAsScheduledDate": false,
   "filenameAsScheduledDateFormat": "",
   "filenameAsDateFolders": [],
-  "recurrenceOnNextLine": false,
+  "recurrenceOnNextLine": true,
   "statusSettings": {
     "coreStatuses": [
       {

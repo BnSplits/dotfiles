@@ -5,5 +5,7 @@
   "templater-obsidian",
   "obsidian-tasks-plugin",
   "calendar",
-  "typewriter-mode"
+  "typewriter-mode",
+  "pdf-plus",
+  "darlal-switcher-plus"
 ]

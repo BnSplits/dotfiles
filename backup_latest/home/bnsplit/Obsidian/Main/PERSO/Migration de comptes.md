@@ -52,5 +52,5 @@
 - [x] Stable Diffusion
 - [x] Prodia (Stable Diffusion api) [Abandon]
 - [x] Opera
-- [ ] Nothing to see here
+- [x] Nothing to see here
 

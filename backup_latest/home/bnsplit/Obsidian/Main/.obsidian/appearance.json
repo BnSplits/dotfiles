@@ -8,6 +8,8 @@
   "nativeMenus": false,
   "enabledCssSnippets": [
     "vault-name-top",
-    "hide_vault_name"
+    "hide_vault_name",
+    "hide_vault_section",
+    "hide_window_buttons"
   ]
 }

@@ -1,0 +1,11 @@
+body > div.titlebar > div > div.titlebar-button-container.mod-right {
+  display: none;
+}
+
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-header-container::after {
+  display: none;
+}
+
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-header-container {
+  padding-right: 8px;
+}

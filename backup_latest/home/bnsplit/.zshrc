@@ -55,7 +55,7 @@ alias matrix='cmatrix'
 alias grep='grep --color=always'
 # alias vim='nvim'
 alias yo='yay -Rns $(yay -Qdtq)'
-alias ysyu='yay -Syu'
+alias yu='yay -Syu --noconfirm'
 alias rmdb='sudo rm /var/lib/pacman/db.lck'
 alias ddd="sudo dd bs=4M if='$1' of=$2 conv=fsync oflag=direct status=progress"
 AnimeDive() {

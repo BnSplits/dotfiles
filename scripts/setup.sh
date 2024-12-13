@@ -76,7 +76,7 @@ default_packages=(
     "vlc"
     "vdhcoapp"
     "vim"
-    "visual-studio-code-bin"
+    # "visual-studio-code-bin"
     "wtype"
     "wget"
     "wl-clipboard"
@@ -421,7 +421,7 @@ function configure_docker() {
         sudo systemctl enable --now docker &&
         echo_success "Docker service enabled and started" &&
         echo_arrow "adding user to docker group" &&
-        sudo usermod -ag docker $user &&
+        sudo usermod -aG docker $USER &&
         echo_success "user added"
     fi
 }

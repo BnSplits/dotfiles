@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "🍌",
-      "🏠",
-      "📺",
-      "📓",
-      "🏫"
+      "LiBanana",
+      "LiSchool",
+      "LiListTodo",
+      "❕",
+      "🍌"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -35,6 +35,7 @@
     "useInternalPlugins": false
   },
   "Perso": "🧑",
-  "PERSO": "🍌",
-  "SCHOOL": "🏫"
+  "SCHOOL": "LiSchool",
+  "PERSO": "LiBanana",
+  "TASKS": "LiListTodo"
 }
